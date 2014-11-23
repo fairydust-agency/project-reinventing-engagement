@@ -208,15 +208,27 @@ table {
     ...
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.Navigation {
+  background-color: #222;
+  text-align: center;
+  font-size: 2em;
+  padding: 1em;
+}
+.Navigation a {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  color: #b10dc9;
+  text-decoration: none;
+}
 .Pitchbox {
   background-color: #0ff;
-  background-image: 'Estonian_great_swing.jpg';
+  height: 40em;
+  background-image: url("shutterstock_94201756.jpg");
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   background-position: center center;
-  border: 1px solid #d13f19;
 }
 .Button--VARIANT\=Buy {
   display: block;
