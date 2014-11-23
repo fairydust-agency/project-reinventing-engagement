@@ -208,9 +208,43 @@ table {
     ...
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-/*-----------------------------------------------------------------------------
-  VENUE
------------------------------------------------------------------------------*/
+.Pitchbox {
+  background-color: #0ff;
+  background-image: 'Estonian_great_swing.jpg';
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: center center;
+  border: 1px solid #d13f19;
+}
+.Button--VARIANT\=Buy {
+  display: block;
+  background-color: #2ecc40;
+  padding: 1em;
+}
+.Button--VARIANT\=Buy form,
+.Button--VARIANT\=Buy input {
+  display: block;
+  margin: 0 auto;
+}
+.Componentgrid {
+  position: relative;
+  display: block;
+  font-size: 2em;
+  background-color: #0074d9;
+}
+.Componentgrid--VARIANT\=Grid {
+  background-color: #ffdc00;
+}
+.Componentgrid--VARIANT\=List {
+  background-color: #b10dc9;
+}
+.Card {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+}
 .Venue {
   z-index: 100;
   position: relative;
@@ -258,13 +292,11 @@ table {
   padding-top: 7px;
   padding-bottom: 3px;
 }
-/*-----------------------------------------------------------------------------
-  SUBSCRIBE
------------------------------------------------------------------------------*/
 .Subscribe {
   z-index: 100;
   position: relative;
   width: 100%;
+  padding: 3em;
   overflow: hidden;
   font-size: 30px;
   vertical-align: top;
@@ -305,30 +337,63 @@ table {
   letter-spacing: 0.02em;
   color: #fff;
 }
-.Subscribe__input\:email {
+.Subscribe__input-email {
   display: inline-block;
+  border: 0.1em solid #b10dc9;
+  color: #b10dc9;
+  background-color: #222;
   width: 12em;
   height: 2em;
   font-size: 1em;
   margin-top: 0.4em;
   padding-left: 0.4em;
 }
-.Subscribe__action\:submit {
+.Subscribe__action-submit {
   display: inline-block;
+  border: none;
+  background-color: #b10dc9;
   width: 7em;
   height: 2em;
   font-size: 1em;
   margin-top: 0.4em;
 }
-/*-----------------------------------------------------------------------------
-  ABOUT
------------------------------------------------------------------------------*/
+.About {
+  font-size: 3em;
+/*
+  Setting up our colors for each social media site.
+
+  Here's a handy list of social media colors:
+    http://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+  */
+/*Facebook*/
+/*Twitter*/
+/*Google Plus*/
+/*Instagram*/
+/*Tumblr*/
+/*Flickr*/
+/*Vine*/
+/*
+  Setting equal widths dependent on the number of links.
+  Add or remove as many as necessary.
+  */
+/* one item */
+/* two items */
+/* three items */
+/* four items */
+/* five items */
+/* six items */
+/* seven items */
+/* eight items */
+/*
+  Assigning link background colors and setting the hover and active states. For quick adding of buttons, perform a search + replace on the 2 letter variable name.
+  */
+}
 .About .About__description {
   background-color: #222;
 }
 .About .About__links {
   width: 100%;
-  height: 5em;
+  height: 3em;
   display: table;
   margin: 0;
 }
@@ -343,26 +408,6 @@ table {
 @media (max-width: 768px) {
   .About .About__links a {
     font-size: 1.5em;
-  }
-}
-.About .About__links a:first-child {
-  -webkit-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;
-}
-@media (max-width: 768px) {
-  .About .About__links a:first-child {
-    -webkit-border-radius: 0;
-    border-radius: 0;
-  }
-}
-.About .About__links a:last-child {
-  -webkit-border-radius: 0px 5px 5px 0px;
-  border-radius: 0px 5px 5px 0px;
-}
-@media (max-width: 768px) {
-  .About .About__links a:last-child {
-    -webkit-border-radius: 0;
-    border-radius: 0;
   }
 }
 .About .About__links a:first-child:nth-last-child(1) {
