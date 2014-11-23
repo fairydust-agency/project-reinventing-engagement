@@ -124,7 +124,7 @@ helpers()
     display           block
     margin            0 auto
     height            30em
-    width             50%
+    width             100%
   .Venue__link
     z-index           300     // layer 3
     position          absolute
@@ -174,22 +174,21 @@ helpers()
     height            14em
     margin            0 auto
     padding-left      0.5em
-    background-color  yellow
     &::before
       content     "{"
       display     inline-block
-      color       purple
+      color       purple      // @TODO: variable
       font-size   12em
       font-weight 900
     &::after
       content     "}"
       display     inline-block
-      color       purple
+      color       purple      // @TODO: variable
       font-size   12em
       font-weight 900
     .Subscribe__content
       display inline-block
-      background-color green
+      background-color green  // @TODO: variable
 /*-----------------------------------------------------------------------------
   ABOUT
 -----------------------------------------------------------------------------*/
@@ -207,7 +206,7 @@ helpers()
     color: white;
     width: 14.2%;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     padding: .5em;
   }
   @media (max-width: 768px) {
@@ -378,7 +377,6 @@ helpers()
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 @require 'project'
 project(
-  main_color:   yellow,
   font_size:    configuration_font_size_base,
   font_family:  configuration_font_family_base
 )
