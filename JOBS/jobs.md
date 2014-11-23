@@ -1,6 +1,7 @@
 #### Jobs
 __General__
-* #FEA304, E7F3CB, 293430, 89A96A, 7A044B
+* ~~FEA304, E7F3CB, 27313B, 97CD66, 7A044B~~
+* ~~FEA304, 010D0B, 25002B, C1EB14, FFEAE4~~
 * **Nagivation:**
   * More Breathing + Maybe Background Color + Symbol
   * Reduce height of menu bar
