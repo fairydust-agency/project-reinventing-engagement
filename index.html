@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+    <title>Reinventing Engagement</title>
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Welcome to Reinventing Engagement by fairydust-agency</title>
+<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+		<meta charset="utf-8">
+		<meta name="description" content="Reinventing Engagement - Foo Bar Baz">
+		<meta name="keywords" content="event, reinventing engagement">
+		<meta name="author" content="Alexander Praetorius">
+
+    <!-- https://github.com/postcss/autoprefixer -->
+    <!-- http://necolas.github.io/normalize.css -->
+		<script type="text/javascript" src="/public/js/jquery.easing-1.3.js"></script>
+		<script type="text/javascript" src="/public/js/jquery.scrollTo-1.4.2.js"></script>
+		<script type="text/javascript" src="http://use.typekit.com/puv4lik.js"></script>
+
+	  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+    <link rel="stylesheet" href="SOURCE/index.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/fairydust-agency/project-reinventing-engagement">View on GitHub</a>
-    <div class="shell">
+    <div id="CONTAINER" class="ReinventingEngagement">
+      <div id="TOP_MENU"class="Navigation">
+        <a href="#TOP_MENU">Event</a>
+        <a href="#SPEAKERS">Speakers</a>
+        <a href="#JOIN">Join</a>
+        <a href="#SCHEDULE">Schedule</a>
+        <a href="#VENUE">Venue</a>
+        <a href="#SUBSCRIBE">Subscribe</a>
+        <a href="#CONTACT">Contact</a>
+      </div>
+      <div id="PITCH"class="Pitchbox">
+        Welcome to Reinventing Engagement
+      </div>
+      <div id="SPEAKERS"class="Componentgrid Componentgrid--VARIANT=Grid">
+        <div class="Card--VARIANT=Userprofile">Hans</div>
+        <div class="Card--VARIANT=Userprofile">Harald</div>
+        <div class="Card--VARIANT=Userprofile">Horst</div>
+        <div class="Card--VARIANT=Userprofile">Giesbert</div>
+        <div class="Card--VARIANT=Userprofile">Hilde</div>
+        <div class="Card--VARIANT=Userprofile">Heinrich</div>
+        <div class="Card--VARIANT=Userprofile">Walter</div>
+      </div>
+      <div id="CALL_TO_ACTION_1" class="COMPENSATE">
+        Join Now!
+      </div>
+      <div id="SCHEDULE" class="Componentgrid Componentgrid--VARIANT=List">
+        <div class="Card--VARIANT=Appointment">Talk 01</div>
+        <div class="Card--VARIANT=Appointment">Talk 02</div>
+        <div class="Card--VARIANT=Appointment">Talk 03</div>
+        <div class="Card--VARIANT=Appointment">Talk 04</div>
+        <div class="Card--VARIANT=Appointment">Talk 05</div>
+        <div class="Card--VARIANT=Appointment">Talk 06</div>
+        <div class="Card--VARIANT=Appointment">Talk 07</div>
+      </div>
+      <div id="VENUE" class="Venue">
+        <iframe class="Venue__map" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d79444.89666165772!2d-0.20077785225342815!3d51.51958145721065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x48761b2dd2b9bb31%3A0x6dc2b87973d38bc9!2sImagination+Ltd%2C+25+Store+St%2C+London+WC1E+7BL%2C+Gro%C3%9Fbritannien+und+Nordirland!3m2!1d51.5196015!2d-0.1321117!5e0!3m2!1sde!2s!4v1416695493800"></iframe>
+        <a class="Venue__link" target="_blank" href="https://www.google.com/maps/dir//Imagination+Ltd,+25+Store+St,+London+WC1E+7BL,+United+Kingdom/@51.519581,-0.200778,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48761b2dcdccca6b:0xac0d79d50ab97561!2m2!1d-0.132004!2d51.519333?hl=en-US"></a>
+        <a class="Venu__description" target="_blank" href="https://www.google.com/maps/place/Imagination+Ltd,+25+Store+St,+Fitzrovia,+London+WC1E+7BL,+Gro%C3%9Fbritannien+und+Nordirland/@51.5196015,-0.1321117,17z/data=!3m1!4b1!4m2!3m1!1s0x48761b2dd2b9bb31:0x6dc2b87973d38bc9">
+          Share Location
+        </a>
+      </div>
+      <div id="FOLLOW" class="Subscribe">
+        <div class="Subscribe__box">
+          <div class="Subscribe__content">
+            <p class="center script_font" id="good_tagline_b">Sounds good so far.</p>
+            <p class="center xl_grow_font upper" id="send_tagline_b">Send me updates and future happenings </p>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Welcome to Reinventing Engagement</h1>
-            <h2>reinventing engagement</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/fairydust-agency/project-reinventing-engagement/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/fairydust-agency/project-reinventing-engagement/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
-<a id="welcome-to-reinventing-engagement" class="anchor" href="#welcome-to-reinventing-engagement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Reinventing Engagement</h3>
-
-<p>You will soon be able to register for the event.</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/fairydust-agency">fairydust-agency</a> can be found on <a href="https://github.com/fairydust-agency/project-reinventing-engagement">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+            <form action="http://habitsummit.us3.list-manage.com/subscribe/post?u=35d91733f992cc03c43e96245&amp;id=8e5a171f38" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline communication validate" role="form" target="_blank" novalidate="">
+              <div class="form-group subscribe_form col-sm-6 col-sm-offset-2 col-md-4 col-md-offset-3 col-lg-4 col-lg-offset-3" id="inline_email_form_b">
+                <label class="sr-only" for="email1">Enter email</label>
+                <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Enter email">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_35d91733f992cc03c43e96245_8e5a171f38" value=""></div>
+              </div>
+              <button type="submit" class="btn btn-warning subscribe_button subscribe_top upper light_font col-sm-2 col-md-2 col-lg-2" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+            </form><!--End mc_embed_signup-->
+          </div>
+        </div>
+      </div>
+      <div id="CONTACT" class="About">
+        <div class="About__links">
+          <a class="About__facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="About__twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="About__email" href="#"><i class="fa fa-at"></i></a>
+        </div>
+        <div class="About__description">
+          asdf
+        </div>
+      </div>
 
     </div>
-
-    
   </body>
 </html>

@@ -1,0 +1,132 @@
+project(
+    main_color  = inherit,
+    font_size   = inherit,
+    font_family = inherit
+  )
+  html
+    box-sizing border-box
+  *, *:before, *:after // overwrites default of content-box
+    /* @TODO: http://css-tricks.com/autoprefixer/ */
+    /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+    -webkit-box-sizing inherit   /* Safari 3-4, also probably droppable */
+    /* Firefox (desktop or Android) 28- */
+    -moz-box-sizing inherit   /* Firefox 1, probably can drop this */
+    /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+    box-sizing inherit   /* Everything else */
+  body
+    background-color  red
+  #CONTAINER
+    font-size         font_size
+    font-family       font_family
+  // 
+  // .About {
+  //   margin-left: 2em;
+  //   margin-right: 2em;
+  // }
+  // @media (max-width: 768px) {
+  //   .About {
+  //     margin: 0;
+  //   }
+  // }
+
+  // SECONDARY NAVBAR
+  // menu
+  //   cf()
+  //   position          relative
+  //   z-index           10000
+  //   width             100%
+  //   height            42px
+  //   background-color  cityilike_black
+  //   navtitle
+  //     position      absolute
+  //     margin-top    10px
+  //     margin-left   -5px
+  //     color         cityilike_smokewhite
+  //     padding-left  2%
+  //     top           -80px
+  //     h1
+  //       font-size 36px
+  //       font-weight 900
+  //   .mapImage
+  //     z-index           15000
+  //     circle()
+  //     circle_left()
+  //     &:hover
+  //       box-shadow 0 0 10px cityilike_shadow
+  //       cursor     pointer
+  //   nav
+  //     width 100%
+  //     font-size 2rem
+  //     line-height 4rem
+  //     a.active
+  //       font-weight 600
+  //       text-transform uppercase
+  //       padding-left 2%
+  //       padding-right 2%
+  //       linkstyle(cityilike_orange, cityilike_orange, cityilike_orange)
+  //     a
+  //       font-weight 600
+  //       text-transform uppercase
+  //       padding-left 2%
+  //       padding-right 2%
+  //       linkstyle()
+
+  /*----------------------------------------------------------------------------*\
+    MENU BAR
+  \*----------------------------------------------------------------------------*/
+  // POSITIONING & STYLE
+
+  // NAVBAR STYLE
+
+  // LOGO
+
+  // LOGOUT
+
+  // NAV BUTTONS - MOBILE COLORS
+
+  // TAG MANAGER INPUT FIELD
+
+  // SEARCH
+
+
+  /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    BASIC ELEMENTS
+  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+  // body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  //   font-family       cityilike_mainfont
+  // body
+  //   font-size         cityilike_basefontsize
+  //   background-color  cityilike_smokewhite
+  // #header_logo_link_image
+  //   position          relative
+  //   top               5px
+  //   height            30px
+  //   width             auto
+  // #header
+  //   position          fixed
+  //   z-index           999999
+  //   top               0
+  //   width             100%
+  //   height            40px
+  // #footer
+  //   position          relative
+  //   color             cityilike_smokewhite
+  //   background-color  cityilike_black
+  //   width             100%
+  //   padding-top       15px
+  //   padding-bottom    15px
+  //   bottom            0px
+  //   margin-top        50px
+  // strong
+  //   font-weight       bold
+  // em
+  //   font-style        italic
+  //
+  // +above(breakpoint_custom)
+  //   .grouping
+  //     display               inline-block
+  // +below(breakpoint_custom)
+  //   .grouping
+  //     display               block
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/

@@ -1,0 +1,183 @@
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  TEASERBOX
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+box(boxbordercolor = cityilike_lightgrey)
+  light         = lighten(boxbordercolor, 40%)
+  medium        = lighten(boxbordercolor, 20%)
+  dark          = darken(boxbordercolor, 10%)
+  border-width  1px
+  border-style  solid
+  border-radius 2px
+  border-color  light medium dark
+
+Teaserbox(
+  infodisplay     = inline-block,
+  titlecolor      = cityilike_black,
+  textcolor       = cityilike_grey,
+  backgroundcolor = cityilike_lightgrey,
+  ribboncolor     = cityilike_lightgrey,
+  bordercolor     = cityilike_black,
+  shadowcolor     = cityilike_grey,
+  infotextcolor   = cityilike_smokewhite,
+  infoboxcolor    = cityilike_black,
+  iconpicture     = ''
+  fontsizeAnchor  = 10px
+)
+  box()
+  color               textcolor
+  background-color    backgroundcolor
+  position            relative
+  width               320px
+  min-height          240px
+  font-size           fontsizeAnchor
+  margin              0 auto
+  cursor              pointer
+  opacity             0
+  display             block
+  text-decoration     none
+  text-shadow         none
+  -webkit-transition  opacity 2s ease-out
+  -moz-transition     opacity 2s ease-out
+  -ms-transition      opacity 2s ease-out
+  -o-transition       opacity 2s ease-out
+  transition          opacity 2s ease-out
+  &.Teaserbox--STATE\\=pending
+    opacity             0
+    -webkit-transition  opacity 2s ease-out
+    -moz-transition     opacity 2s ease-out
+    -ms-transition      opacity 2s ease-out
+    -o-transition       opacity 2s ease-out
+    transition          opacity 2s ease-out
+  &.Teaserbox--STATE\\=normal
+    opacity             1
+  .Teaserbox__ribbon
+    position            absolute
+    background-image    iconpicture
+    background-repeat   no-repeat
+    background-position center
+    top                 15px
+    left                -5px
+    height              30px
+    width               45px
+    padding             0px 0px 0px 10px
+    text-align          top
+    border-radius-detailed(topright: 1px, bottomright: 1px)
+    // box-shadow           2px 2px 2px  0px darken(shadowcolor, 30%)
+    // -webkit-box-shadow   2px 2px 2px  0px darken(shadowcolor, 30%)
+    // -moz-box-shadow      2px 2px 2px  0px darken(shadowcolor, 30%)
+    background-color    ribboncolor
+    font-size           5em
+    line-height         1em
+    &::before
+      position          absolute
+      top               30px
+      left              0px
+      height            0
+      width             0
+      display           block
+      content           ""
+      border-top        5px solid darken(bordercolor, 30%)
+      border-left       5px solid transparent
+  .Teaserbox__image
+    width               100%
+    height              180px
+    border              5px solid bordercolor
+    border-radius-detailed(topright: 2px, topleft: 2px)
+  .Teaserbox__title
+    display             block
+    padding-top         10px
+    padding-left        10px
+    margin-top          0px
+    margin-bottom       0px
+    line-height         1.2em
+    font-size           2em
+    font-weight         600
+    color               titlecolor
+  .Teaserbox__description
+    display             inline-block
+    padding-left        10px
+    padding-bottom      3px
+    font-weight         500
+    line-height         1.8em
+    font-size           1.4em
+    color               textcolor
+    margin              0 0 0px
+  .Teaserbox__info
+    cf()
+    position            relative
+    float               right
+    top                 10px
+    right               25px
+    width               20%
+    background-color    infoboxcolor
+    display             infodisplay
+    color               infotextcolor
+    font-weight         900
+    font-size           1.8em
+    line-height         1.8em
+    text-align          center
+    padding             3px
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  TEASERBOX VARIANTS
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+// DEFAULT
+.Teaserbox.Teaserbox--VARIANT\\=default
+  Teaserbox(
+  )
+// CLOUDS
+.Teaserbox.Teaserbox--VARIANT\\=cloud
+  Teaserbox(
+    backgroundcolor:  cityilike_lightblue,
+    infodisplay:      none,
+    iconpicture:      url('/icons/Clouds_Menu.png')
+  )
+  .Teaserbox__image:nth-child(3)
+    position          relative
+    border-radius     0px
+    border-top        0
+    display           block
+    width             33.33%
+    height            60px
+  .Teaserbox__image:nth-child(4)
+    position          absolute
+    border-radius     0px
+    border-top        0
+    border-left       0
+    margin-left       106px
+    margin-top        -60px
+    width             33.33%
+    height            60px
+  .Teaserbox__image:nth-child(5)
+    position          absolute
+    border-radius     0px
+    border-top        0
+    border-left       0
+    margin-left       212px
+    margin-top        -60px
+    width             33.33%
+    height            60px
+// PLACES
+.Teaserbox.Teaserbox--VARIANT\\=place
+  Teaserbox(
+    backgroundcolor:  cityilike_white,
+    ribboncolor:      cityilike_lightorange,
+    infodisplay:      none,
+    iconpicture:      url('/icons/Places_Menu.png')
+  )
+// EVENTS
+.Teaserbox.Teaserbox--VARIANT\\=event
+  Teaserbox(
+    backgroundcolor:  cityilike_lightpurple,
+    infodisplay:      none,
+    iconpicture:      url('/icons/Events_Menu.png')
+  )
+// DEALS
+.Teaserbox.Teaserbox--VARIANT\\=deal
+  Teaserbox(
+    backgroundcolor: cityilike_lightgreen,
+    iconpicture:     url('/icons/Deals_Menu.png')
+  )
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
