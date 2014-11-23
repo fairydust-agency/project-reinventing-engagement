@@ -1,5 +1,12 @@
 Suggestion:
-Name of conference
-Date + city (which format)
-Venue address
+Name of conference 
+Reinventing Imagination
+Date + city (which format) 
+January 8th 2015, London - UK
+Venue address 
+IMAGINATION LONDON
+25 STORE STREET
+SOUTH CRESCENT
+LONDON WC1E 7BL
+UK
 Link to buy tickets
