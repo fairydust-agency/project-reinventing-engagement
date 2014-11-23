@@ -243,25 +243,20 @@ table {
   top: 3em;
   left: 3em;
   display: block;
-  background: #000;
-  background: rgba(0,0,0,0.75);
-  color: #fff;
   font-size: 2em;
   font-weight: 900;
   text-decoration: none;
   padding: 0.1em;
 }
-.Venue .Venu__description:visited {
+.Venue .Venu__description span {
+  display: inline-block;
+  background: #000;
+  background: rgba(0,0,0,0.75);
   color: #fff;
-  text-decoration: none;
-}
-.Venue .Venu__description:hover {
-  color: #fff;
-  text-decoration: none;
-}
-.Venue .Venu__description:active {
-  color: #fff;
-  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 3px;
 }
 /*-----------------------------------------------------------------------------
   SUBSCRIBE
@@ -275,31 +270,55 @@ table {
   vertical-align: top;
   background-color: #322;
 }
-.Subscribe .Subscribe__box {
+.Subscribe__box {
   z-index: 100;
   display: block;
-  width: 29em;
+  width: 31em;
   height: 14em;
   margin: 0 auto;
   padding-left: 0.5em;
 }
-.Subscribe .Subscribe__box::before {
+.Subscribe__box::before {
   content: "{";
   display: inline-block;
   color: #b10dc9;
   font-size: 12em;
   font-weight: 900;
 }
-.Subscribe .Subscribe__box::after {
+.Subscribe__box::after {
   content: "}";
   display: inline-block;
   color: #b10dc9;
   font-size: 12em;
   font-weight: 900;
 }
-.Subscribe .Subscribe__box .Subscribe__content {
+.Subscribe__content {
+  position: relative;
   display: inline-block;
-  background-color: #2ecc40;
+  width: 20em;
+  bottom: 1.3em;
+  padding-left: 0.38em;
+}
+.Subscribe__description {
+  font-size: 3em;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.Subscribe__input\:email {
+  display: inline-block;
+  width: 12em;
+  height: 2em;
+  font-size: 1em;
+  margin-top: 0.4em;
+  padding-left: 0.4em;
+}
+.Subscribe__action\:submit {
+  display: inline-block;
+  width: 7em;
+  height: 2em;
+  font-size: 1em;
+  margin-top: 0.4em;
 }
 /*-----------------------------------------------------------------------------
   ABOUT
@@ -474,6 +493,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  z-index: 0;
   background-color: #d13f19;
 }
 #CONTAINER {

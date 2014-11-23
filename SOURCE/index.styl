@@ -140,22 +140,28 @@ helpers()
     top               3em
     left              3em
     display           block
-    background        rgb(0, 0, 0) /* The Fallback */
-    background        rgba(0, 0, 0, 0.75)
-    color             white
     font-size         2em
     font-weight       900
     text-decoration   none
     padding           0.1em
-    &:visited
+    span
+      display           inline-block
+      background        rgb(0, 0, 0) /* The Fallback */
+      background        rgba(0, 0, 0, 0.75)
       color             white
-      text-decoration   none
-    &:hover
-      color             white
-      text-decoration   none
-    &:active
-      color             white
-      text-decoration   none
+      padding-left      15px
+      padding-right     15px
+      padding-top       7px
+      padding-bottom    3px
+    // &:visited
+    //   color             white
+    //   text-decoration   none
+    // &:hover
+    //   color             white
+    //   text-decoration   none
+    // &:active
+    //   color             white
+    //   text-decoration   none
 /*-----------------------------------------------------------------------------
   SUBSCRIBE
 -----------------------------------------------------------------------------*/
@@ -167,28 +173,53 @@ helpers()
   font-size         30px     // ANCHOR SIZE
   vertical-align    top
   background-color  #332222   // @TODO: use variable
-  .Subscribe__box
-    z-index           100     // layer 1
-    display           block
-    width             29em
-    height            14em
-    margin            0 auto
-    padding-left      0.5em
-    &::before
-      content     "{"
-      display     inline-block
-      color       purple      // @TODO: variable
-      font-size   12em
-      font-weight 900
-    &::after
-      content     "}"
-      display     inline-block
-      color       purple      // @TODO: variable
-      font-size   12em
-      font-weight 900
-    .Subscribe__content
-      display inline-block
-      background-color green  // @TODO: variable
+
+.Subscribe__box
+  z-index           100     // layer 1
+  display           block
+  width             31em
+  height            14em
+  margin            0 auto
+  padding-left      0.5em
+  // background-color  yellow  // @TODO: DUMMY
+  &::before
+    content         "{"
+    display         inline-block
+    color           purple      // @TODO: variable
+    font-size       12em
+    font-weight     900
+  &::after
+    content         "}"
+    display         inline-block
+    color           purple      // @TODO: variable
+    font-size       12em
+    font-weight     900
+.Subscribe__content
+  position          relative
+  display           inline-block
+  width             20em
+  bottom            1.3em
+  padding-left      0.38em
+  // background-color  green  // @TODO: DUMMY
+.Subscribe__description
+  font-size         3em
+  font-weight       900
+  letter-spacing    0.02em
+  color             white       // @TODO: variable
+.Subscribe__input\\:email
+  display           inline-block
+  width             12em
+  height            2em
+  font-size         1em
+  margin-top        0.4em
+  padding-left      0.4em
+.Subscribe__action\\:submit
+  display           inline-block
+  width             7em
+  height            2em
+  font-size         1em
+  margin-top        0.4em
+
 /*-----------------------------------------------------------------------------
   ABOUT
 -----------------------------------------------------------------------------*/
