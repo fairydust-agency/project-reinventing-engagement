@@ -1,0 +1,5 @@
+Suggestion:
+Name of conference
+Date + city (which format)
+Venue address
+Link to buy tickets
