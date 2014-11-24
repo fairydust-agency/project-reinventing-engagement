@@ -22,6 +22,27 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <script>
+      // bundle.js
+      var addEvent = function(elem, type, eventHandle) {
+          if (elem == null || typeof(elem) == 'undefined') return;
+          if ( elem.addEventListener ) {
+              elem.addEventListener( type, eventHandle, false );
+          } else if ( elem.attachEvent ) {
+              elem.attachEvent( "on" + type, eventHandle );
+          } else {
+              elem["on"+type]=eventHandle;
+          }
+      };
+      var GO = function () {
+        var currentWidth = document.body.offsetWidth;
+        console.log('resizing to: ' + currentWidth);
+        var newSize = currentWidth / 827.3 + 'em';
+        document.querySelector('#CONTAINER').style.fontSize = newSize;
+      };
+      addEvent(window, "resize", function() { GO(); });
+      window.onload = GO;
+    </script>
     <div id="CONTAINER" class="ReinventingEngagement">
       <div id="TOP_MENU"class="Navigation">
         <a href="#TOP_MENU">Event</a>
@@ -39,6 +60,28 @@
         </div>
         <div class="Pitchbox__moment">
           January 8th 2015, London - UK
+        </div>
+        <div class="Pitchbox__location">
+          <span>Imagination London</span><br>
+          <span>25 Store Street</span><br>
+          <span>South Crescent</span><br>
+          <span>London WC1E 7BL</span><br>
+          <span>UK</span>
+        </div>
+        <div class="Pitchbox__description">
+          What is more important than engagement?<br>
+          <br>
+          <i style="padding-left: 1em; padding-right: 0.3em;" class="fa fa-group"></i> Deeper connections with customers<br>
+          <i style="padding-left: 1em; padding-right: 0.3em;" class="fa fa-comments-o"></i> Better understanding of audiences<br>
+          <i style="padding-left: 1em; padding-right: 0.3em;" class="fa fa-cogs"></i> More sustainable working habits<br>
+          <div style="background-color: red;">
+            <p>Developing meaningful relationships – with customers, audiences and internal staff – lies at the heart of any business’ success. And relationships are built on engagement. Reinventing Engagement brings together business leaders, entrepreneurs, commercial directors, creative agencies, and experts to share insights and actively learn  how to create the mutually beneficial engagements that underpin sustainable, lasting relationships with customers and employees.</p><br>
+          </div>
+          <div style="background-color: green;">
+            <p>Our speakers will delve into the worlds of psychology, design and behavioural science to illuminate what truly moves people through the cycle of desire, fulfilment and eventually habit, and how these insights can benefit any business whose products or services benefit from repeat customer engagement.  Whether you’re looking to design a new offering or revamp an existing one, or to be inspired by ways to make your own organisation run more smoothly and effectively, this event is for you.</p><br>
+            <br>
+            <p>The innovative format of this new event includes hands-on opportunities to put these ideas into practice, working with the speakers themselves.</p><br>
+          </div>
         </div>
       </div>
       <div id="SPEAKERS"class="Componentgrid Componentgrid--VARIANT=Grid">
@@ -108,7 +151,7 @@
       <div id="FOLLOW" class="Subscribe">
         <div class="Subscribe__box">
           <form class="Subscribe__content" method="post" target="_blank" action="http://reinventingengagement.us9.list-manage.com/subscribe/post?u=4ee9b91bdf6eb3ef1a74d1466&amp;id=b76c19b3db">
-            <div class="Subscribe__description">Stay in touch<br><font size="10"><center><div style="display: block; padding-top: 0.8em;padding-bottom: 0.5em;">We update u</span></center></font></div>
+            <div class="Subscribe__description">Stay in touch<br><font size="10"><center><div style="display: block; padding-top: 0.8em;padding-bottom: 0.5em;">We update you</span></center></font></div>
             <input class="Subscribe__input-email" value="" name="EMAIL" placeholder="email address">
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -9000px;"><input type="text" name="b_4ee9b91bdf6eb3ef1a74d1466_b76c19b3db" tabindex="-1" value=""></div>
@@ -132,33 +175,12 @@
             UK<br><br>
           </div>
           <div class="About__description__allRightsReserved">
-            Reinventing Engagement - All rights reserved 2014
+            Reinventing Engagement - <i class="fa fa-copyright"></i> All rights reserved 2014
           </div>
           <div class="About__description__websiteDesign">
           Website design by <a href="http://fairydust.agency">fairydust.agency</a>
         </div>
       </div>
-      <script>
-        // bundle.js
-        var addEvent = function(elem, type, eventHandle) {
-            if (elem == null || typeof(elem) == 'undefined') return;
-            if ( elem.addEventListener ) {
-                elem.addEventListener( type, eventHandle, false );
-            } else if ( elem.attachEvent ) {
-                elem.attachEvent( "on" + type, eventHandle );
-            } else {
-                elem["on"+type]=eventHandle;
-            }
-        };
-        var GO = function () {
-          var currentWidth = document.body.offsetWidth;
-          console.log('resizing to: ' + currentWidth);
-          var newSize = currentWidth / 831.9 + 'em';
-          document.querySelector('#CONTAINER').style.fontSize = newSize;
-        };
-        addEvent(window, "resize", function() { GO(); });
-        window.onload = GO;
-      </script>
     </div>
   </body>
 </html>
