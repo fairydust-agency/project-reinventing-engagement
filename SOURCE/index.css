@@ -210,7 +210,7 @@ table {
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 .Navigation {
   z-index: 100;
-  background-color: #010d0b;
+  background-color: #4b0b6c;
   font-size: 2em;
   font-weight: 900;
   letter-spacing: 0.2em;
@@ -219,19 +219,37 @@ table {
   padding-bottom: 0.65em;
 }
 .Navigation a {
-  background-color: #4b0b6c;
-  color: #010d0b;
+  background-color: #010d0b;
+  color: #4b0b6c;
   text-decoration: none;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-top: 0.2em;
+  padding-bottom: 0.25em;
 }
 .Pitchbox {
-  height: 40em;
+  position: relative;
+  height: 30em;
 }
 .Pitchbox img {
   z-index: -1;
+  width: 100%;
   position: fixed;
   top: 0;
+}
+.Pitchbox .Pitchbox__title {
+  position: absolute;
+  font-size: 3em;
+  font-weight: 900;
+  top: 0.4em;
+  left: 8em;
+}
+.Pitchbox .Pitchbox__moment {
+  position: absolute;
+  font-size: 3em;
+  font-weight: 900;
+  top: 2.4em;
+  left: 8em;
 }
 .Button--VARIANT\=Buy {
   display: block;

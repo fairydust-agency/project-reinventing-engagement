@@ -33,8 +33,13 @@
         <a href="#CONTACT">Contact</a>
       </div>
       <div id="PITCH"class="Pitchbox">
-        <img class="Pitchbox__poster" src="SOURCE/shutterstock_94201756.jpg" width="100%">
-        Welcome to Reinventing Engagement
+        <img class="Pitchbox__poster" src="SOURCE/shutterstock_94201756.jpg">
+        <div class="Pitchbox__title">
+          Reinventing Imagination
+        </div>
+        <div class="Pitchbox__moment">
+          January 8th 2015, London - UK
+        </div>
       </div>
       <div id="SPEAKERS"class="Componentgrid Componentgrid--VARIANT=Grid">
         <div class="Componentgrid__entry  Card Card--VARIANT=Userprofile">Hans</div>
@@ -128,7 +133,27 @@
           Website design by <a href="http://fairydust.agency">fairydust.agency</a>
         </div>
       </div>
-
+      <script>
+        // bundle.js
+        var addEvent = function(elem, type, eventHandle) {
+            if (elem == null || typeof(elem) == 'undefined') return;
+            if ( elem.addEventListener ) {
+                elem.addEventListener( type, eventHandle, false );
+            } else if ( elem.attachEvent ) {
+                elem.attachEvent( "on" + type, eventHandle );
+            } else {
+                elem["on"+type]=eventHandle;
+            }
+        };
+        var GO = function () {
+          var currentWidth = document.body.offsetWidth;
+          console.log('resizing to: ' + currentWidth);
+          var newSize = currentWidth / 831.9 + 'em';
+          document.querySelector('#CONTAINER').style.fontSize = newSize;
+        };
+        addEvent(window, "resize", function() { GO(); });
+        window.onload = GO;
+      </script>
     </div>
   </body>
 </html>

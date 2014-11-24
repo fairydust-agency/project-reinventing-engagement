@@ -37,6 +37,8 @@ __General__
           Our speakers will delve into the worlds of psychology, design and behavioural science to illuminate what truly moves people through the cycle of desire, fulfilment and eventually habit, and how these insights can benefit any business whose products or services benefit from repeat customer engagement.  Whether you’re looking to design a new offering or revamp an existing one, or to be inspired by ways to make your own organisation run more smoothly and effectively, this event is for you.
 
           The innovative format of this new
+* **Speakers:**
+  * Boxes onHover show infos, otherwith, just name and image
 * **Buy:**
   * [ Join us - Buy Tickets]  violet on black
 * **Schedule:**
