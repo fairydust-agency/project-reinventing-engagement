@@ -60,7 +60,7 @@ _text       = configuration_white
 -----------------------------------------------------------------------------*/
 .Button--VARIANT\\=Buy
   display           block
-  background-color  green
+  background-color  configuration_white
   padding           1em
   form, input
     display         block
@@ -74,13 +74,13 @@ _text       = configuration_white
   position          relative
   display           block
   font-size         2em
-  background-color  blue
 
 .Componentgrid--VARIANT\\=Grid
-  background-color  yellow
+  background-color  configuration_purple
 
 .Componentgrid--VARIANT\\=List
-  background-color  purple
+  background-color  configuration_orange
+
 
 
 /*-----------------------------------------------------------------------------
@@ -132,7 +132,7 @@ _text       = configuration_white
       display           inline-block
       background        rgb(0, 0, 0) /* The Fallback */
       background        rgba(0, 0, 0, 0.75)
-      color             white
+      color             configuration_white
       padding-left      15px
       padding-right     15px
       padding-top       7px
@@ -157,7 +157,7 @@ _text       = configuration_white
   overflow          hidden
   font-size         30px     // ANCHOR SIZE
   vertical-align    top
-  background-color  #332222   // @TODO: use variable
+  background-color  configuration_black   // @TODO: use variable
 .Subscribe__box
   z-index           100     // layer 1
   display           block
@@ -167,15 +167,15 @@ _text       = configuration_white
   padding-left      0.5em
   // background-color  yellow  // @TODO: DUMMY
   &::before
-    content         "{"
+    content         "["
     display         inline-block
-    color           purple      // @TODO: variable
+    color           configuration_green      // @TODO: variable
     font-size       12em
     font-weight     900
   &::after
-    content         "}"
+    content         "]"
     display         inline-block
-    color           purple      // @TODO: variable
+    color           configuration_green      // @TODO: variable
     font-size       12em
     font-weight     900
 .Subscribe__content
@@ -192,9 +192,9 @@ _text       = configuration_white
   color             white       // @TODO: variable
 .Subscribe__input-email
   display           inline-block
-  border            0.1em solid purple
-  color             purple      // @TODO: variable
-  background-color  #222222     // @TODO: variable
+  border            0.1em solid configuration_green
+  color             configuration_green      // @TODO: variable
+  background-color  configuration_black    // @TODO: variable
   width             12em
   height            2em
   font-size         1em
@@ -203,7 +203,7 @@ _text       = configuration_white
 .Subscribe__action-submit
   display           inline-block
   border            none
-  background-color  purple      // @TODO: variable
+  background-color  configuration_green      // @TODO: variable
   width             7em
   height            2em
   font-size         1em
@@ -217,8 +217,8 @@ _font_purple = configuration_purple
 .About
   font-size           3em    // ANCHOR SIZE
   .About__description
-    margin 7em 0em 0em 0em 
-    padding 1em 0em .6em 0em 
+    margin 7em 0em 0em 0em
+    padding 1em 0em .6em 0em
     background-color _background
     color _font_white
     letter-spacing 0.02em
@@ -248,7 +248,7 @@ _font_purple = configuration_purple
   }
   .About__links a {
     display: table-cell;
-    color: white;
+    color: configuration_white;
     width: 14.2%;
     text-align: center;
     font-size: 2em;

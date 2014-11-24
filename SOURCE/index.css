@@ -253,7 +253,7 @@ table {
 }
 .Button--VARIANT\=Buy {
   display: block;
-  background-color: #2ecc40;
+  background-color: #ffeae4;
   padding: 1em;
 }
 .Button--VARIANT\=Buy form,
@@ -265,13 +265,12 @@ table {
   position: relative;
   display: block;
   font-size: 2em;
-  background-color: #0074d9;
 }
 .Componentgrid--VARIANT\=Grid {
-  background-color: #ffdc00;
+  background-color: #4b0b6c;
 }
 .Componentgrid--VARIANT\=List {
-  background-color: #b10dc9;
+  background-color: #fea304;
 }
 .Card {
   display: inline-block;
@@ -319,7 +318,7 @@ table {
   display: inline-block;
   background: #000;
   background: rgba(0,0,0,0.75);
-  color: #fff;
+  color: #ffeae4;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 7px;
@@ -333,7 +332,7 @@ table {
   overflow: hidden;
   font-size: 30px;
   vertical-align: top;
-  background-color: #322;
+  background-color: #010d0b;
 }
 .Subscribe__box {
   z-index: 100;
@@ -344,16 +343,16 @@ table {
   padding-left: 0.5em;
 }
 .Subscribe__box::before {
-  content: "{";
+  content: "[";
   display: inline-block;
-  color: #b10dc9;
+  color: #c1eb14;
   font-size: 12em;
   font-weight: 900;
 }
 .Subscribe__box::after {
-  content: "}";
+  content: "]";
   display: inline-block;
-  color: #b10dc9;
+  color: #c1eb14;
   font-size: 12em;
   font-weight: 900;
 }
@@ -372,9 +371,9 @@ table {
 }
 .Subscribe__input-email {
   display: inline-block;
-  border: 0.1em solid #b10dc9;
-  color: #b10dc9;
-  background-color: #222;
+  border: 0.1em solid #c1eb14;
+  color: #c1eb14;
+  background-color: #010d0b;
   width: 12em;
   height: 2em;
   font-size: 1em;
@@ -384,7 +383,7 @@ table {
 .Subscribe__action-submit {
   display: inline-block;
   border: none;
-  background-color: #b10dc9;
+  background-color: #c1eb14;
   width: 7em;
   height: 2em;
   font-size: 1em;
@@ -458,7 +457,7 @@ table {
 }
 .About .About__links a {
   display: table-cell;
-  color: #fff;
+  color: #ffeae4;
   width: 14.2%;
   text-align: center;
   font-size: 2em;
