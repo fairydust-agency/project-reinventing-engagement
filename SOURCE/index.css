@@ -395,10 +395,11 @@ table {
   padding-left: 0.38em;
 }
 .Subscribe__description {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 900;
   letter-spacing: 0.02em;
   color: #4b0b6c;
+  padding-left: 1.4em;
 }
 .Subscribe__input-email {
   display: inline-block;
