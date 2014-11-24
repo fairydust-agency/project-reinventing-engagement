@@ -37,7 +37,7 @@ _background = rgba(0,0,0,.75)//configuration_black
 _text       = configuration_white
 .Pitchbox
   position            relative
-  height              65em
+  height              87em
   vertical-align      bottom
   img
     z-index           -1 // layer 0
@@ -74,15 +74,23 @@ _text       = configuration_white
     color             _text
     line-height       1.2em
     font-weight       900
-    padding           4em
-    padding-left      19em
-    padding-right     19em
-
+    .Pitchbox__story1,
+    .Pitchbox__story2,
+    .Pitchbox__story3
+      padding           4em
+      padding-left      19em
+      padding-right     19em
+    .Pitchbox__story1
+      font-size         1.4em
+    .Pitchbox__story2
+      background-color  configuration_green
+    .Pitchbox__story3
+      background-color  configuration_purple
 
 /*-----------------------------------------------------------------------------
   BUTTON
 -----------------------------------------------------------------------------*/
-_background           = rgba(0,0,0,.8)//configuration_black
+_background           = rgba(0,0,0,.75)//configuration_black
 .Button--VARIANT\\=Buy
   display             block
   background-color    _background
@@ -97,27 +105,39 @@ _background           = rgba(0,0,0,.8)//configuration_black
 /*-----------------------------------------------------------------------------
   COMPONENTGRID
 -----------------------------------------------------------------------------*/
-_background1           = configuration_orange
-_background2           = configuration_purple
 .Componentgrid
   position            relative
   display             block
   font-size           2em
-.Componentgrid--VARIANT\\=Grid
-  background-color    _background1
-.Componentgrid--VARIANT\\=List
-  background-color    _background2
 
 
 /*-----------------------------------------------------------------------------
   CARD
 -----------------------------------------------------------------------------*/
-.Card
+_background1           = configuration_orange
+_background2           = configuration_purple
+.Componentgrid--VARIANT\\=Grid .Card
   display             inline-block
   width               32.8%
+  height              10em
   text-align          center
-.Card:nth-child(even)
+.Componentgrid--VARIANT\\=Grid .Card:nth-child(even)
   background-color red
+
+.Componentgrid--VARIANT\\=List .Card
+  display             block
+  margin-left         auto
+  margin-right        auto
+  width               30em
+  padding             0.8em
+  margin-top          0.4em
+  margin-bottom       0.4em
+  text-align          center
+.Componentgrid--VARIANT\\=List .Card:nth-child(even)
+  background-color _background1
+.Componentgrid--VARIANT\\=List .Card:nth-child(odd)
+  background-color _background2
+
 
 /*-----------------------------------------------------------------------------
   VENUE
@@ -245,18 +265,17 @@ _text = configuration_purple
 /*-----------------------------------------------------------------------------
   ABOUT
 -----------------------------------------------------------------------------*/
-_background = configuration_black
+_background = rgba(0,0,0,0.75)
 _font_white = configuration_white
 _font_purple = configuration_purple
 .About
   font-size           3em    // ANCHOR SIZE
   .About__description
-    margin 7em 0em 0em 0em 
-    padding 1em 0em .6em 0em 
+    margin 7em 0em 0em 0em
+    padding 1em 0em .6em 0em
     background-color _background
     color _font_white
     letter-spacing 0.02em
-    opacity 0.8
     .About__description__name
       color _font_white
       padding-bottom .4em
