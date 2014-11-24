@@ -115,21 +115,46 @@ _background2           = configuration_green
 
 _background1           = configuration_orange
 _background2           = configuration_purple
+_font_black            = configuration_black
+_font_white            = configuration_white
 .Componentgrid--VARIANT\\=List .Card
   display             block
   margin-left         auto
   margin-right        auto
   width               30em
   padding             0.8em
-  margin-top          0.4em
-  margin-bottom       0.4em
   text-align          center
 .Componentgrid--VARIANT\\=List .Card:nth-child(even)
   background-color _background1
+  opacity 0.9
+  // padding 1em
+  width 100%
+  text-align left
+  padding-left 10em
+  font-size 0.8em
+  font-weight bold
+  color _font_white
+  padding-top 2em
+  padding-bottom 2em
+  a
+    color _font_white
+    text-decoration none
 .Componentgrid--VARIANT\\=List .Card:nth-child(odd)
   background-color _background2
+  opacity 0.9
+  padding 1em
+  width 100%
+  text-align left
+  padding-left 10em
+  font-size 0.8em
+  font-weight bold
+  padding-top 1.7em
+  padding-bottom 1.7em
+  a
+    color _font_black
+    text-decoration none
 
-
+  
 /*-----------------------------------------------------------------------------
   BUTTON
 -----------------------------------------------------------------------------*/
@@ -140,8 +165,9 @@ _background           = rgba(0,0,0,.75)//configuration_black
   display             block
   background-color    _background
   padding             4em
-  margin-top          4em
-  margin-bottom       4em
+  padding-left        30em
+  margin-top          5em
+  margin-bottom       5em
   form, input
     display           block
     margin            0 auto

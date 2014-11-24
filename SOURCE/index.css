@@ -314,15 +314,39 @@ table {
   margin-right: auto;
   width: 30em;
   padding: 0.8em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
   text-align: center;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(even) {
   background-color: #fea304;
+  opacity: 0.9;
+  width: 100%;
+  text-align: left;
+  padding-left: 10em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #f8f3ee;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.Componentgrid--VARIANT\=List .Card:nth-child(even) a {
+  color: #f8f3ee;
+  text-decoration: none;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) {
   background-color: #4b0b6c;
+  opacity: 0.9;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  padding-left: 10em;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-top: 1.7em;
+  padding-bottom: 1.7em;
+}
+.Componentgrid--VARIANT\=List .Card:nth-child(odd) a {
+  color: #010d0b;
+  text-decoration: none;
 }
 .Button {
   clear: both;
@@ -331,8 +355,9 @@ table {
   display: block;
   background-color: rgba(0,0,0,0.75);
   padding: 4em;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  padding-left: 30em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 .Button--VARIANT\=Buy form,
 .Button--VARIANT\=Buy input {
