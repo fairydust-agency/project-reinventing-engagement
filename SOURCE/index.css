@@ -422,26 +422,32 @@ table {
   */
 }
 .About .About__description {
-  margin: 1.5em 0em 3em 0em;
-  padding: 1em 0em 1em 0em;
+  margin: 7em 0em 0em 0em;
+  padding: 1em 0em 0.6em 0em;
   background-color: #010d0b;
   color: #ffeae4;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
 }
 .About .About__description .About__description__name {
-  font-size: 0.4em;
+  color: #ffeae4;
+  padding-bottom: 0.4em;
+  font-size: 0.8em;
   text-align: center;
   font-weight: bold;
 }
 .About .About__description .About__description__address {
-  font-size: 0.4em;
+  font-size: 0.7em;
   text-align: center;
+  font-weight: bold;
 }
 .About .About__description .About__description__allRightsReserved {
   text-align: center;
-  font-size: 0.25em;
+  font-size: 0.4em;
+  padding-bottom: 0.2em;
 }
 .About .About__description .About__description__websiteDesign {
-  font-size: 0.25em;
+  font-size: 0.4em;
   text-align: center;
 }
 .About .About__links {

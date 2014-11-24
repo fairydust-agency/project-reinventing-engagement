@@ -211,34 +211,34 @@ _text       = configuration_white
 /*-----------------------------------------------------------------------------
   ABOUT
 -----------------------------------------------------------------------------*/
-configuration_orange  = #FEA304
-configuration_black   = #010D0B
-configuration_purple  = #4B0B6C
-configuration_green   = #C1EB14
-configuration_white   = #FFEAE4
-
 _background = configuration_black
-_font = configuration_white
-
+_font_white = configuration_white
+_font_purple = configuration_purple
 .About
   font-size           3em    // ANCHOR SIZE
   .About__description
-    margin 1.5em 0em 3em 0em 
-    padding 1em 0em 1em 0em 
+    margin 7em 0em 0em 0em 
+    padding 1em 0em .6em 0em 
     background-color _background
-    color _font
+    color _font_white
+    letter-spacing 0.02em
+    opacity 0.8
     .About__description__name
-      font-size .4em
+      color _font_white
+      padding-bottom .4em
+      font-size 0.8em
       text-align center
       font-weight bold
     .About__description__address
-      font-size 0.4em
+      font-size .7em
       text-align center
+      font-weight bold
     .About__description__allRightsReserved
       text-align center
-      font-size 0.25em
+      font-size 0.4em
+      padding-bottom .2em
     .About__description__websiteDesign
-      font-size 0.25em
+      font-size 0.4em
       text-align center
   .About__links {
     width: 100%;
