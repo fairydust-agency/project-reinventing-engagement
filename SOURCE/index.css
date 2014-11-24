@@ -422,7 +422,27 @@ table {
   */
 }
 .About .About__description {
-  background-color: #222;
+  margin: 1.5em 0em 3em 0em;
+  padding: 1em 0em 1em 0em;
+  background-color: #010d0b;
+  color: #ffeae4;
+}
+.About .About__description .About__description__name {
+  font-size: 0.4em;
+  text-align: center;
+  font-weight: bold;
+}
+.About .About__description .About__description__address {
+  font-size: 0.4em;
+  text-align: center;
+}
+.About .About__description .About__description__allRightsReserved {
+  text-align: center;
+  font-size: 0.25em;
+}
+.About .About__description .About__description__websiteDesign {
+  font-size: 0.25em;
+  text-align: center;
 }
 .About .About__links {
   width: 100%;
