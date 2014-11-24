@@ -211,16 +211,15 @@ table {
 .Navigation {
   z-index: 100;
   background-color: #4b0b6c;
-  font-size: 1.775em;
+  font-size: 1.2em;
   font-weight: 900;
   letter-spacing: 0.2em;
   text-align: center;
-  padding-top: 0.6em;
-  padding-bottom: 0.65em;
+  padding-top: 0.9em;
+  padding-bottom: 0.95em;
 }
 .Navigation a {
-  background-color: #010d0b;
-  color: #4b0b6c;
+  color: #f8f3ee;
   text-transform: uppercase;
   text-decoration: none;
   padding-left: 0.25em;
@@ -317,15 +316,15 @@ table {
   text-align: center;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(even) {
-  background-color: #fea304;
-  opacity: 0.9;
+  background-color: #9eb277;
+  opacity: 0.98;
   width: 100%;
   text-align: left;
   padding-left: 10em;
   font-size: 0.8em;
   font-weight: bold;
   color: #f8f3ee;
-  padding-top: 2em;
+  padding-top: 1.5em;
   padding-bottom: 2em;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(even) a {
@@ -334,14 +333,13 @@ table {
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) {
   background-color: #4b0b6c;
-  opacity: 0.9;
-  padding: 1em;
+  opacity: 0.98;
   width: 100%;
   text-align: left;
   padding-left: 10em;
   font-size: 0.8em;
   font-weight: bold;
-  padding-top: 1.7em;
+  padding-top: 1.5em;
   padding-bottom: 1.7em;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) a {
