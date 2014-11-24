@@ -83,23 +83,9 @@ _text       = configuration_white
     .Pitchbox__story1
       font-size         1.4em
     .Pitchbox__story2
-      background-color  configuration_green
-    .Pitchbox__story3
       background-color  configuration_purple
-
-/*-----------------------------------------------------------------------------
-  BUTTON
------------------------------------------------------------------------------*/
-_background           = rgba(0,0,0,.75)//configuration_black
-.Button--VARIANT\\=Buy
-  display             block
-  background-color    _background
-  padding             4em
-  margin-top          4em
-  margin-bottom       4em
-  form, input
-    display           block
-    margin            0 auto
+    .Pitchbox__story3
+      background-color  configuration_orange
 
 
 /*-----------------------------------------------------------------------------
@@ -114,16 +100,21 @@ _background           = rgba(0,0,0,.75)//configuration_black
 /*-----------------------------------------------------------------------------
   CARD
 -----------------------------------------------------------------------------*/
+_background1           = rgba(0,0,0,0.75)//configuration_black
+_background2           = configuration_green
+.Componentgrid--VARIANT\\=Grid .Card
+  width                 33.5%
+  margin-left           -0.14em
+  margin-right          -0.14em
+  padding-bottom        29%
+  display               inline-block
+.Componentgrid--VARIANT\\=Grid .Card:nth-child(even)
+  background-color      _background1
+.Componentgrid--VARIANT\\=Grid .Card:nth-child(odd)
+  background-color      _background2
+
 _background1           = configuration_orange
 _background2           = configuration_purple
-.Componentgrid--VARIANT\\=Grid .Card
-  display             inline-block
-  width               32.8%
-  height              10em
-  text-align          center
-.Componentgrid--VARIANT\\=Grid .Card:nth-child(even)
-  background-color red
-
 .Componentgrid--VARIANT\\=List .Card
   display             block
   margin-left         auto
@@ -137,6 +128,23 @@ _background2           = configuration_purple
   background-color _background1
 .Componentgrid--VARIANT\\=List .Card:nth-child(odd)
   background-color _background2
+
+
+/*-----------------------------------------------------------------------------
+  BUTTON
+-----------------------------------------------------------------------------*/
+_background           = rgba(0,0,0,.75)//configuration_black
+.Button
+  clear               both
+.Button--VARIANT\\=Buy
+  display             block
+  background-color    _background
+  padding             4em
+  margin-top          4em
+  margin-bottom       4em
+  form, input
+    display           block
+    margin            0 auto
 
 
 /*-----------------------------------------------------------------------------

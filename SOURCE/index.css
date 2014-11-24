@@ -285,22 +285,10 @@ table {
   font-size: 1.4em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story2 {
-  background-color: #9eb277;
-}
-.Pitchbox .Pitchbox__description .Pitchbox__story3 {
   background-color: #4b0b6c;
 }
-.Button--VARIANT\=Buy {
-  display: block;
-  background-color: rgba(0,0,0,0.75);
-  padding: 4em;
-  margin-top: 4em;
-  margin-bottom: 4em;
-}
-.Button--VARIANT\=Buy form,
-.Button--VARIANT\=Buy input {
-  display: block;
-  margin: 0 auto;
+.Pitchbox .Pitchbox__description .Pitchbox__story3 {
+  background-color: #fea304;
 }
 .Componentgrid {
   position: relative;
@@ -308,13 +296,17 @@ table {
   font-size: 2em;
 }
 .Componentgrid--VARIANT\=Grid .Card {
+  width: 33.5%;
+  margin-left: -0.14em;
+  margin-right: -0.14em;
+  padding-bottom: 29%;
   display: inline-block;
-  width: 32.8%;
-  height: 10em;
-  text-align: center;
 }
 .Componentgrid--VARIANT\=Grid .Card:nth-child(even) {
-  background-color: #d13f19;
+  background-color: rgba(0,0,0,0.75);
+}
+.Componentgrid--VARIANT\=Grid .Card:nth-child(odd) {
+  background-color: #9eb277;
 }
 .Componentgrid--VARIANT\=List .Card {
   display: block;
@@ -331,6 +323,21 @@ table {
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) {
   background-color: #4b0b6c;
+}
+.Button {
+  clear: both;
+}
+.Button--VARIANT\=Buy {
+  display: block;
+  background-color: rgba(0,0,0,0.75);
+  padding: 4em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+.Button--VARIANT\=Buy form,
+.Button--VARIANT\=Buy input {
+  display: block;
+  margin: 0 auto;
 }
 .Venue {
   z-index: 100;
