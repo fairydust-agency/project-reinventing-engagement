@@ -281,7 +281,7 @@ table {
   padding-right: 19em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story1 {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story2 {
   background-color: #4b0b6c;
@@ -324,8 +324,8 @@ table {
   font-size: 0.8em;
   font-weight: bold;
   color: #f8f3ee;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(even) a {
   color: #f8f3ee;
@@ -338,8 +338,8 @@ table {
   text-align: center;
   font-size: 0.8em;
   font-weight: bold;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) a {
   color: #010d0b;
