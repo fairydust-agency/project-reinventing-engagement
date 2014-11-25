@@ -355,6 +355,9 @@ table {
   padding-top: 1.2em;
   padding-bottom: 1.2em;
 }
+.Componentgrid--VARIANT\=List .Card:nth-child(even):hover {
+  opacity: 0.98;
+}
 .Componentgrid--VARIANT\=List .Card:nth-child(even) a {
   color: #f8f3ee;
   text-decoration: none;
