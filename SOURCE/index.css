@@ -305,7 +305,6 @@ table {
   position: relative;
   display: block;
   font-size: 2em;
-  padding-bottom: 2em;
 }
 .Card {
   position: relative;
@@ -333,6 +332,9 @@ table {
   background-color: #010d0b;
   text-align: center;
   padding: 1em;
+}
+.Componentgrid--VARIANT\=List {
+  padding-bottom: 2em;
 }
 .Componentgrid--VARIANT\=List .Card {
   display: block;
@@ -437,6 +439,15 @@ table {
   font-size: 0.5em;
   color: #f8f3ee;
   font-weight: 900;
+}
+.empty {
+  font-size: 2em;
+  color: #fea304;
+  font-weight: 900;
+  margin-top: 2.5em;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
 .Button {
   clear: both;
