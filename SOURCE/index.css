@@ -262,8 +262,11 @@ table {
 .Pitchbox .Pitchbox__location {
   font-size: 1.5em;
   top: 12em;
-  left: 43em;
+  left: 40em;
   padding: 1em;
+}
+.Pitchbox .Pitchbox__location img {
+  width: 100%;
 }
 .Pitchbox .Pitchbox__description {
   position: absolute;
@@ -376,34 +379,38 @@ table {
   text-decoration: none;
 }
 .avatar {
-  width: 8em;
-  height: 8em;
-  margin: 1em auto 1em auto;
+  width: 9em;
+  height: 9em;
+  margin: 0.5em auto 0.5em auto;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: -moz-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: -ms-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: -o-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: -moz-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: -o-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: -ms-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
-  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: -moz-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: -ms-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: -o-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: -moz-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: -o-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: -ms-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%);
   -webkit-background-size: 150%;
   -moz-background-size: 150%;
   background-size: 150%;
   cursor: pointer;
+  overflow: hidden;
+}
+.avatar img {
+  width: 100%;
 }
 .avatar:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
-  -webkit-border-radius: 0%;
-  border-radius: 0%;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   -webkit-transition: all 3s ease-out;
   -moz-transition: all 3s ease-out;
   -ms-transition: all 3s ease-out;
@@ -516,7 +523,7 @@ table {
   width: 100%;
   padding: 3em;
   overflow: hidden;
-  font-size: 30px;
+  font-size: 1.5em;
   vertical-align: top;
   background-color: #9eb277;
 }
@@ -782,6 +789,8 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 *,
 *:before,
@@ -799,6 +808,8 @@ html {
 body {
   z-index: 0;
   background-color: #ffeed6;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 #CONTAINER {
   font-size: 20px;

@@ -5,6 +5,8 @@ project(
   )
   html
     box-sizing border-box
+    max-width         100%
+    overflow-x        hidden
   *, *:before, *:after // overwrites default of content-box
     /* @TODO: http://css-tricks.com/autoprefixer/ */
     /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
@@ -13,9 +15,13 @@ project(
     -moz-box-sizing inherit   /* Firefox 1, probably can drop this */
     /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
     box-sizing inherit   /* Everything else */
+
   body
     z-index           0           // layer 0
     background-color  #FFEED6
+    max-width         100%
+    overflow-x        hidden
+
   #CONTAINER
     font-size         font_size
     font-family       font_family

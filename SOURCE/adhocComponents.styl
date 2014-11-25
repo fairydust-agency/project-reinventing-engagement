@@ -58,8 +58,10 @@ _text       = configuration_white
   .Pitchbox__location
     font-size         1.5em
     top               12em
-    left              43em
+    left              40em
     padding            1em
+    img
+      width           100%
   .Pitchbox__description
     position          absolute
     bottom            0
@@ -126,15 +128,15 @@ _font_white            = configuration_white
 _font_orange           = configuration_orange
 _font_green            = configuration_green
 .Title
-  font-size             2em
-  width                80%
-  margin-left          auto
-  margin-right         auto
-  color                _font_green
-  font-weight          bold
-  background-color      _background2
-  text-align            center
-  padding               1em
+  font-size           2em
+  width               80%
+  margin-left         auto
+  margin-right        auto
+  color               _font_green
+  font-weight         bold
+  background-color    _background2
+  text-align          center
+  padding             1em
 .Componentgrid--VARIANT\\=List
   padding-bottom      2em
 .Componentgrid--VARIANT\\=List .Card
@@ -177,19 +179,22 @@ _font_green            = configuration_green
   PROFILE
 -----------------------------------------------------------------------------*/
 .avatar
-  width: 8em;
-  height: 8em;
-  margin: 1em auto 1em auto;
+  width: 9em;
+  height: 9em;
+  margin: 0.5em auto 0.5em auto;
   border-radius: 50%;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%), url('http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg');
+  background:
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.2) 50%);
   background-size: 150%;
-  // border: 0.3em solid configuration_white;
   cursor: pointer;
-  // box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(200, 200, 200, 0.1), 0 5px 3px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.6), 0 0 0 15px rgba(0, 0, 0, 0.3), 0 0 0 25px rgba(0, 0, 0, 0.2), 0 0 0 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  img
+    width 100%
 
 .avatar:hover
   box-shadow      none
-  border-radius   0%
+  border-radius   0
   transition: all 3s ease-out;
 
 .Card--VARIANT\\=Userprofile a
@@ -301,7 +306,7 @@ _text = configuration_purple
   width               100%
   padding             3em
   overflow            hidden
-  font-size           30px     // ANCHOR SIZE
+  font-size           1.5em     // ANCHOR SIZE
   vertical-align      top
   background-color    _background   // @TODO: use variable
 .Subscribe__box
