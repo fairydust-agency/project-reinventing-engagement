@@ -30,7 +30,7 @@ _background = rgba(0,0,0,.85)//configuration_black
 _text       = configuration_white
 .Pitchbox
   position            relative
-  height              190em
+  height              146em
   vertical-align      bottom
   .Pitchbox__poster
     z-index           -1 // layer 0
@@ -68,7 +68,6 @@ _text       = configuration_white
     color             _text
     line-height       1.2em
     font-weight       900
-    margin-bottom     30em
     .Pitchbox__story1,
     .Pitchbox__story2,
     .Pitchbox__story3
@@ -92,7 +91,6 @@ _text       = configuration_white
       opacity 0.85
       font-size         1.5em
       line-height       1.5em
-      
 
 
 /*-----------------------------------------------------------------------------
@@ -108,10 +106,13 @@ _text       = configuration_white
 /*-----------------------------------------------------------------------------
   CARD
 -----------------------------------------------------------------------------*/
+.Card
+  position relative
+
 _background1           = rgba(0,0,0,0.75)//configuration_black
 _background2           = configuration_green
 .Componentgrid--VARIANT\\=Grid .Card
-  width                 33.5%
+  width                 33.56%
   margin-left           -0.14em
   margin-right          -0.14em
   padding-bottom        29%
@@ -171,6 +172,49 @@ _font_green            = configuration_green
     color _font_green
     text-decoration none
 
+/*-----------------------------------------------------------------------------
+  PROFILE
+-----------------------------------------------------------------------------*/
+.avatar
+  width: 8em;
+  height: 8em;
+  margin: 1em auto 1em auto;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%), url('http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg');
+  background-size: 150%;
+  border: 0.3em solid configuration_white;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  // box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(200, 200, 200, 0.1), 0 5px 3px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.6), 0 0 0 15px rgba(0, 0, 0, 0.3), 0 0 0 25px rgba(0, 0, 0, 0.2), 0 0 0 35px rgba(0, 0, 0, 0.1);
+
+.avatar:hover
+  box-shadow      none
+  border-radius   0
+
+.Card--VARIANT\\=Userprofile a
+  text-decoration none
+  display         block
+  position        absolute
+  top             0
+  width           15em
+  left            0
+  .avatar
+    position      relative
+    left          -0.6em
+  .name
+    font-size     1em
+    color         configuration_orange
+    font-weight   900
+  .name, .description
+    position      relative
+    left          -0.6em
+    display       inline-block
+    text-align    center
+    width         100%
+  .description
+    font-size     0.5em
+    color         configuration_white
+    font-weight   900
 
 /*-----------------------------------------------------------------------------
   BUTTON

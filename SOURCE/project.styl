@@ -36,15 +36,19 @@ project(
     right             1em
     padding           0.3em
     background-color  configuration_purple
-    opacity           0.5
+    opacity           0.3
+    border            0.03em solid configuration_black
     border-radius     50%
-    color             configuration_green
     text-decoration   none
     &:hover
-      color           configuration_purple
       background-color configuration_green
-    &:active, &:visited
-      text-decoration none
+    a
+      color             configuration_green
+      &:hover
+        color           configuration_purple
+        background-color configuration_green
+      &:active, &:visited
+        text-decoration none
 
 
   //

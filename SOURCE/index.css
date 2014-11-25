@@ -229,7 +229,7 @@ table {
 }
 .Pitchbox {
   position: relative;
-  height: 190em;
+  height: 146em;
   vertical-align: bottom;
 }
 .Pitchbox .Pitchbox__poster {
@@ -273,7 +273,6 @@ table {
   color: #f8f3ee;
   line-height: 1.2em;
   font-weight: 900;
-  margin-bottom: 30em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story1,
 .Pitchbox .Pitchbox__description .Pitchbox__story2,
@@ -308,8 +307,11 @@ table {
   font-size: 2em;
   padding-bottom: 2em;
 }
+.Card {
+  position: relative;
+}
 .Componentgrid--VARIANT\=Grid .Card {
-  width: 33.5%;
+  width: 33.56%;
   margin-left: -0.14em;
   margin-right: -0.14em;
   padding-bottom: 29%;
@@ -369,6 +371,72 @@ table {
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) a {
   color: #9eb277;
   text-decoration: none;
+}
+.avatar {
+  width: 8em;
+  height: 8em;
+  margin: 1em auto 1em auto;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: -moz-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: -ms-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: -o-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: -moz-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: -o-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: -ms-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  background: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 50%), url("http://o5.com/wp-content/uploads/2011/05/Kitten111.jpg");
+  -webkit-background-size: 150%;
+  -moz-background-size: 150%;
+  background-size: 150%;
+  border: 0.3em solid #f8f3ee;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.avatar:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.Card--VARIANT\=Userprofile a {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 15em;
+  left: 0;
+}
+.Card--VARIANT\=Userprofile a .avatar {
+  position: relative;
+  left: -0.6em;
+}
+.Card--VARIANT\=Userprofile a .name {
+  font-size: 1em;
+  color: #fea304;
+  font-weight: 900;
+}
+.Card--VARIANT\=Userprofile a .name,
+.Card--VARIANT\=Userprofile a .description {
+  position: relative;
+  left: -0.6em;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.Card--VARIANT\=Userprofile a .description {
+  font-size: 0.5em;
+  color: #f8f3ee;
+  font-weight: 900;
 }
 .Button {
   clear: both;
@@ -741,18 +809,24 @@ body {
   right: 1em;
   padding: 0.3em;
   background-color: #4b0b6c;
-  opacity: 0.5;
+  opacity: 0.3;
+  border: 0.03em solid #010d0b;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  color: #9eb277;
   text-decoration: none;
 }
 #BackToTop:hover {
+  background-color: #9eb277;
+}
+#BackToTop a {
+  color: #9eb277;
+}
+#BackToTop a:hover {
   color: #4b0b6c;
   background-color: #9eb277;
 }
-#BackToTop:active,
-#BackToTop:visited {
+#BackToTop a:active,
+#BackToTop a:visited {
   text-decoration: none;
 }
 /*----------------------------------------------------------------------------*    MENU BAR
