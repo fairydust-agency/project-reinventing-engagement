@@ -290,14 +290,12 @@ table {
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story2 {
   background-color: #9eb277;
-  opacity: 0.85;
   font-size: 1.5em;
   color: #010d0b;
   line-height: 1.5em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story3 {
   background-color: #4b0b6c;
-  opacity: 0.85;
   font-size: 1.5em;
   line-height: 1.5em;
 }
@@ -399,19 +397,18 @@ table {
   -webkit-background-size: 150%;
   -moz-background-size: 150%;
   background-size: 150%;
-  border: 0.3em solid #f8f3ee;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
   cursor: pointer;
 }
 .avatar:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 0%;
+  border-radius: 0%;
+  -webkit-transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  -ms-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+  transition: all 3s ease-out;
 }
 .Card--VARIANT\=Userprofile a {
   text-decoration: none;
