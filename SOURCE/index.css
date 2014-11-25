@@ -238,7 +238,9 @@ table {
   position: fixed;
   top: 0;
 }
-.Pitchbox .Pitchbox__title,
+.Pitchbox .Pitchbox__title1,
+.Pitchbox .Pitchbox__title2,
+.Pitchbox .Pitchbox__title3,
 .Pitchbox .Pitchbox__moment,
 .Pitchbox .Pitchbox__location {
   position: absolute;
@@ -247,7 +249,17 @@ table {
   font-weight: 900;
   padding: 0.5em;
 }
-.Pitchbox .Pitchbox__title {
+.Pitchbox .Pitchbox__title1 {
+  font-size: 3.155em;
+  top: 0.8em;
+  left: 7.6em;
+}
+.Pitchbox .Pitchbox__title2 {
+  font-size: 3.155em;
+  top: 0.8em;
+  left: 7.6em;
+}
+.Pitchbox .Pitchbox__title3 {
   font-size: 3.155em;
   top: 0.8em;
   left: 7.6em;
