@@ -229,10 +229,10 @@ table {
 }
 .Pitchbox {
   position: relative;
-  height: 87em;
+  height: 90em;
   vertical-align: bottom;
 }
-.Pitchbox img {
+.Pitchbox .Pitchbox__poster {
   z-index: -1;
   width: 100%;
   position: fixed;
@@ -293,6 +293,7 @@ table {
   position: relative;
   display: block;
   font-size: 2em;
+  padding-bottom: 2em;
 }
 .Componentgrid--VARIANT\=Grid .Card {
   width: 33.5%;
@@ -351,14 +352,12 @@ table {
   display: block;
   background-color: rgba(0,0,0,0.75);
   padding: 4em;
-  padding-left: 30em;
+  padding-left: 31em;
   margin-top: 5em;
   margin-bottom: 5em;
 }
-.Button--VARIANT\=Buy form,
-.Button--VARIANT\=Buy input {
-  display: block;
-  margin: 0 auto;
+.Button--VARIANT\=Buy img {
+  width: 20em;
 }
 .Venue {
   z-index: 100;
@@ -695,7 +694,7 @@ html {
 }
 body {
   z-index: 0;
-  background-color: #d13f19;
+  background-color: #000;
 }
 #CONTAINER {
   font-size: 20px;

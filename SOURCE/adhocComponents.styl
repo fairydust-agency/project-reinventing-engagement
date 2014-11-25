@@ -37,9 +37,9 @@ _background = rgba(0,0,0,.75)//configuration_black
 _text       = configuration_white
 .Pitchbox
   position            relative
-  height              87em
+  height              90em
   vertical-align      bottom
-  img
+  .Pitchbox__poster
     z-index           -1 // layer 0
     width             100%
     position          fixed
@@ -95,6 +95,7 @@ _text       = configuration_white
   position            relative
   display             block
   font-size           2em
+  padding-bottom      2em
 
 
 /*-----------------------------------------------------------------------------
@@ -150,7 +151,7 @@ _font_white            = configuration_white
     color _font_black
     text-decoration none
 
-  
+
 /*-----------------------------------------------------------------------------
   BUTTON
 -----------------------------------------------------------------------------*/
@@ -161,12 +162,11 @@ _background           = rgba(0,0,0,.75)//configuration_black
   display             block
   background-color    _background
   padding             4em
-  padding-left        30em
+  padding-left        31em
   margin-top          5em
   margin-bottom       5em
-  form, input
-    display           block
-    margin            0 auto
+  img
+    width             20em
 
 
 /*-----------------------------------------------------------------------------

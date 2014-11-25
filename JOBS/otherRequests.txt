@@ -1,0 +1,181 @@
+Peter,
+
+the weekend is over, on the website reinventingengagement.com you can see the promised first draft.
+
+It includes colour palette,
+all the sections mentioned on the paper mockup, we integrated Mailchimp and Eventbrite and did first rough draft for design.
+
+Please  give us all the feedback you have, maybe you already wrote it in your emails, but unfortunately we haven't had a chance to check it yet.
+
+During the evening we will update the project on Waffle, read all the emails and then write a summary of where we currently stand and send it to you.
+And then tomorrow you can have a Skype call (evening/afternoon) with Alex and make a plan on how to proceed and finish the project.
+
+
+
+
+Hi Nina,
+
+I sent the revisions this morning. There is quite a lot to do including changing the main picture.
+I need the next draft tomorrow morning for my meeting with Imagination. 
+I cannot show them the site as it is.
+
+I absolutely need those changes made tonight including the pictures, titles and bios of the speakers. I'm less concerned 
+with waffle and summaries. Can you do that tonight please?
+
+
+
+==========================================================================================
+==========================================================================================
+==========================================================================================
+
+
+
+<a href="http://www.eventbrite.com/e/reinventing-engagement-tickets-14564660291?ref=ebtnebregn" target="_blank"><img src="https://www.eventbrite.com/custombutton?eid=14564660291" alt="Eventbrite - Reinventing Engagement" /></a> 
+
+
+
+
+Peter, here's the link on how to create Eventbrite. 
+
+https://www.youtube.com/watch?v=jLMj8_v4glw&feature=youtu.be 
+
+
+
+
+OK. I'll set it up now 
+and once I have set it up what do I send you? the link?Can you use an eventbrite branded button like glazed used? 
+
+
+
+You can decide what type of button you would like. It can be with 
+Eventbrite logo or without. Here's simple tutorial on how you make it and 
+how to send it to us:) Very short, just a minute. 
+
+https://www.youtube.com/watch?v=9UvVg_enibg 
+
+
+
+
+////
+
+I have no logo but I can live with that...do you think I need a logo? 
+
+
+REQUEST:
+can you connect the twitter page to the eventbrite page or tell me how to do itis it #re_engagement 
+
+
+=> all the payment will go through eventbrite. done
+
+
+TWITTER:
+@Re__Engagement <https://twitter.com/Re__Engagement> 
+
+https://twitter.com/Re__Engagement 
+
+
+ok I've added twitter...when do you think you'll have something for me to look at?I'll probably go to bed soon and we can finish tomorrow (except for having to add other speakers later and the actual full schedule when I have them all) 
+
+
+
+
+
+
+Hey, current version is seen here http://reinventingengagement.com/ 
+
+It will take couple of hours more, but the basics are done good so it will 
+go fast. 
+
+We will keep you updated. 
+
+
+
+
+
+
+
+
+Hi Nina,
+
+Can you please use the attached photo instead of the party photo on the site as the main picture.
+
+Can you give me a call so we can discuss the changes I asked for earlier today? I'm hoping they
+can be done tonight.
+
+Thanks,
+
+Peter
+
+
+
+
+
+
+//// I DID NOT RECEIVE THE STUFF BELOW:
+
+
+
+Date: Mon, Nov 24, 2014 at 4:36 PM
+Subject: Fw: website notes:
+To: Nina Breznik <ninabreznik@gmail.com>
+
+
+Hi Nina,
+
+Great work on the first draft!
+
+I just had a long conversation with Louisa Heinrich, who is helping me with the event and is one of my speakers.
+
+Below please find our comments for changes that need to be made/played with.
+
+I am having second thoughts about our main photo I am afraid but I am looking into that now.
+
+An obvious point is that the headline is incorrect. It should be:
+
+Reinventing Engagement:                                                    
+Fulfilment, Desire and Habits                          
+
+below the date should read:
+
+In association with Imagination
+
+and we need to include their logo somewhere: we can discuss that: perhaps next to or above the address at the top.
+
+Also there should be an Eventbrite button above the fold at the top.
+
+Also the page is loading super slow.
+
+Most importantly I need to present this tomorrow morning so I hope you guys have time to finish today (apart from adding
+some more speakers).
+
+Let's talk later!
+
+Many thanks,
+
+Peter
+
+
+////////////////
+
+To: Peter Giblin <pegiblin@yahoo.com> 
+Sent: Monday, 24 November 2014, 15:21
+Subject: website notes:
+
+The overall information heirarchy is pretty flat. I think the overall idea is to create more flow - the headlines as the introduction, the descriptive paragraphs as context, and the speakers/agenda/day as the real meat. To this end, I'd suggest trying the following:
+
+- Instead of the 2 separate colour blocks, unite the descriptive text with the headlines by putting it on the same kind of translucency. You might also try a 2-column layout rather than full-width. Definitely, whatever else, the whole of the descriptive text (2 long paragraphs & 1 short) needs to feel like a single unit of text, providing the bridge between what's above it and what's below it.
+
+- I'd try making the speakers & agenda sections 2/3 instead of full-width. Right now it feels like everything's at the same level of importance, which makes it a little overwhelming scrolling through. I do like the grid layout very much though!
+
+- the agenda also feels way too big, and even kind of unnecessary as it doesn't really convey anything the speakers section hasn't already given. I'd suggest either making it *way* smaller or even possibly removing it for now. I know a few organisers who don't distribute an agenda at all, but rather keep things a surprise so people turn up for the whole day. On the other hand, we have discussed some rather interesting non-keynote formats which might help to sell the event... maybe the way to go would be to highlight those (e.g. as 'format highlights' at the bottom of the speakers section)?
+
+- the calls to action (subscribe, twitter, facebook, etc.) should be far higher up - maybe even anchored to the top nav? The text in the nav bar could be reduced a little to make room for that. Speaking of which, the top nav bar should be anchored!
+
+- I'd lose the yellow and maybe freshen up the green a little - the purple is nice, but you might want to get a third opinion from someone who's a little more conservative. ;)
+
+Hope that helps! I'll have a quick scout round for photos. 
+
+xx
+
+
+
