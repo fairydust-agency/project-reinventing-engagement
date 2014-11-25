@@ -696,11 +696,41 @@ html {
 }
 body {
   z-index: 0;
-  background-color: #000;
+  background-color: #ffeed6;
 }
 #CONTAINER {
   font-size: 20px;
   font-family: Helvetica;
+}
+#author {
+  text-decoration: none;
+  font-weight: 900;
+  color: #9eb277;
+}
+/*-----------------------------------------------------------------------------
+    BACK TO TOP
+  -----------------------------------------------------------------------------*/
+#BackToTop {
+  z-index: 800;
+  font-size: 3em;
+  position: fixed;
+  bottom: 0.5em;
+  right: 1em;
+  padding: 0.3em;
+  background-color: #4b0b6c;
+  opacity: 0.5;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #9eb277;
+  text-decoration: none;
+}
+#BackToTop:hover {
+  color: #4b0b6c;
+  background-color: #9eb277;
+}
+#BackToTop:active,
+#BackToTop:visited {
+  text-decoration: none;
 }
 /*----------------------------------------------------------------------------*    MENU BAR
   \*----------------------------------------------------------------------------*/
