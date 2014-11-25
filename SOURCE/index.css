@@ -263,6 +263,7 @@ table {
   font-size: 1.5em;
   top: 12em;
   left: 43em;
+  padding: 1em;
 }
 .Pitchbox .Pitchbox__description {
   position: absolute;
@@ -283,13 +284,16 @@ table {
   text-align: center;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story1 {
+  text-transform: uppercase;
+  line-height: 2em;
   font-size: 1.5em;
-  line-height: 1.5em;
+  color: #f8f3ee;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story2 {
   background-color: #9eb277;
   opacity: 0.85;
   font-size: 1.5em;
+  color: #010d0b;
   line-height: 1.5em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story3 {
@@ -317,6 +321,17 @@ table {
 .Componentgrid--VARIANT\=Grid .Card:nth-child(odd) {
   background-color: #9eb277;
 }
+.Title {
+  font-size: 2em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #9eb277;
+  font-weight: bold;
+  background-color: #010d0b;
+  text-align: center;
+  padding: 1em;
+}
 .Componentgrid--VARIANT\=List .Card {
   display: block;
   margin-left: auto;
@@ -326,9 +341,9 @@ table {
   text-align: center;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(even) {
-  background-color: #9eb277;
-  opacity: 0.98;
-  width: 75%;
+  background-color: #010d0b;
+  opacity: 0.9;
+  width: 80%;
   text-align: center;
   font-size: 0.8em;
   font-weight: bold;
@@ -341,17 +356,18 @@ table {
   text-decoration: none;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) {
-  background-color: #4b0b6c;
+  background-color: #010d0b;
   opacity: 0.98;
-  width: 75%;
+  width: 80%;
   text-align: center;
   font-size: 0.8em;
   font-weight: bold;
+  color: #9eb277;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) a {
-  color: #010d0b;
+  color: #9eb277;
   text-decoration: none;
 }
 .Button {
@@ -528,7 +544,7 @@ table {
   */
 }
 .About .About__description {
-  margin: 7em 0em 0em 0em;
+  margin: 5em 0em 0em 0em;
   padding: 1em 0em 0.6em 0em;
   background-color: rgba(0,0,0,0.85);
   color: #f8f3ee;

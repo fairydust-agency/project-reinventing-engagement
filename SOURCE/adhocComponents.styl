@@ -59,6 +59,7 @@ _text       = configuration_white
     font-size         1.5em
     top               12em
     left              43em
+    padding            1em
   .Pitchbox__description
     position          absolute
     bottom            0
@@ -76,12 +77,15 @@ _text       = configuration_white
       padding-right     9em
       text-align center
     .Pitchbox__story1
+      text-transform    uppercase
+      line-height       2em
       font-size         1.5em
-      line-height       1.5em
+      color             configuration_white
     .Pitchbox__story2
       background-color  configuration_green
       opacity 0.85
       font-size         1.5em
+      color             configuration_black
       line-height       1.5em
     .Pitchbox__story3
       background-color  configuration_purple
@@ -118,9 +122,21 @@ _background2           = configuration_green
   background-color      _background2
 
 _background1           = configuration_green
-_background2           = configuration_purple
+_background2           = configuration_black
 _font_black            = configuration_black
 _font_white            = configuration_white
+_font_orange           = configuration_orange
+_font_green            = configuration_green
+.Title
+  font-size             2em
+  width                80%
+  margin-left          auto
+  margin-right         auto
+  color                _font_green
+  font-weight          bold
+  background-color      _background2
+  text-align            center
+  padding               1em
 .Componentgrid--VARIANT\\=List .Card
   display             block
   margin-left         auto
@@ -129,9 +145,9 @@ _font_white            = configuration_white
   padding             0.8em
   text-align          center
 .Componentgrid--VARIANT\\=List .Card:nth-child(even)
-  background-color _background1
-  opacity 0.98
-  width 75%
+  background-color _background2
+  opacity 0.9
+  width 80%
   text-align center
   font-size 0.8em
   font-weight bold
@@ -144,14 +160,15 @@ _font_white            = configuration_white
 .Componentgrid--VARIANT\\=List .Card:nth-child(odd)
   background-color _background2
   opacity 0.98
-  width 75%
+  width 80%
   text-align center
   font-size 0.8em
   font-weight bold
+  color _font_green
   padding-top 1.2em
   padding-bottom 1.2em
   a
-    color _font_black
+    color _font_green
     text-decoration none
 
 
@@ -304,7 +321,7 @@ _font_purple = configuration_purple
 .About
   font-size           3em    // ANCHOR SIZE
   .About__description
-    margin 7em 0em 0em 0em
+    margin 5em 0em 0em 0em
     padding 1em 0em .6em 0em
     background-color _background
     color _font_white
