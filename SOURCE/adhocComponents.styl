@@ -30,7 +30,7 @@ _background = rgba(0,0,0,.85)//configuration_black
 _text       = configuration_white
 .Pitchbox
   position            relative
-  height              146em
+  height              100em
   vertical-align      bottom
   .Pitchbox__poster
     z-index           -1 // layer 0
@@ -83,24 +83,33 @@ _text       = configuration_white
     .Pitchbox__story1,
     .Pitchbox__story2,
     .Pitchbox__story3
-      padding           4em
-      padding-left      9em
-      padding-right     9em
-      text-align center
+      padding           2em
+      padding-left      4em
+      padding-right     4em
+      text-align        center
     .Pitchbox__story1
       text-transform    uppercase
       line-height       2em
       font-size         1.5em
       color             configuration_white
     .Pitchbox__story2
-      background-color  configuration_green
-      font-size         1.5em
-      color             configuration_black
+      display           inline-block
+      vertical-align    top
+      width             49%
+      font-size         1.17em
+      color             configuration_white
+      text-align        top
       line-height       1.5em
+      margin-bottom     5em
     .Pitchbox__story3
-      background-color  configuration_purple
-      font-size         1.5em
+      display           inline-block
+      vertical-align    top
+      color             configuration_white
+      text-align        top
+      width             49%
+      font-size         1.17em
       line-height       1.5em
+      margin-bottom     5em
 
 
 /*-----------------------------------------------------------------------------
@@ -119,7 +128,7 @@ _text       = configuration_white
   position relative
 
 _background1           = rgba(0,0,0,0.75)//configuration_black
-_background2           = configuration_green
+_background2           = configuration_purple
 .Componentgrid--VARIANT\\=Grid .Card
   width                 33.56%
   margin-left           -0.14em
@@ -149,6 +158,7 @@ _font_green            = configuration_green
   padding             1em
 .Componentgrid--VARIANT\\=List
   padding-bottom      2em
+  font-size           1em
 .Componentgrid--VARIANT\\=List .Card
   display             block
   margin-left         auto
@@ -249,7 +259,7 @@ _background           = rgba(0,0,0,.98)//configuration_black
   clear               both
 .Button--VARIANT\\=Buy
   display             block
-  background-color    configuration_green
+  background-color    configuration_purple
   padding             4em
   padding-left        31em
   margin-top          0em
