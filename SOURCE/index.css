@@ -361,6 +361,7 @@ table {
   padding: 1em;
 }
 .Componentgrid--VARIANT\=List {
+  display: none;
   padding-bottom: 2em;
   font-size: 1em;
 }
