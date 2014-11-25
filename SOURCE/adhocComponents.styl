@@ -30,7 +30,7 @@ _background = rgba(0,0,0,.85)//configuration_black
 _text       = configuration_white
 .Pitchbox
   position            relative
-  height              90em
+  height              190em
   vertical-align      bottom
   .Pitchbox__poster
     z-index           -1 // layer 0
@@ -67,20 +67,27 @@ _text       = configuration_white
     color             _text
     line-height       1.2em
     font-weight       900
+    margin-bottom     30em
     .Pitchbox__story1,
     .Pitchbox__story2,
     .Pitchbox__story3
       padding           4em
-      padding-left      19em
-      padding-right     19em
+      padding-left      9em
+      padding-right     9em
+      text-align center
     .Pitchbox__story1
-      font-size         1.2em
+      font-size         1.5em
+      line-height       1.5em
     .Pitchbox__story2
       background-color  configuration_green
       opacity 0.85
+      font-size         1.5em
+      line-height       1.5em
     .Pitchbox__story3
       background-color  configuration_purple
       opacity 0.85
+      font-size         1.5em
+      line-height       1.5em
       
 
 
@@ -151,16 +158,16 @@ _font_white            = configuration_white
 /*-----------------------------------------------------------------------------
   BUTTON
 -----------------------------------------------------------------------------*/
-_background           = rgba(0,0,0,.85)//configuration_black
+_background           = rgba(0,0,0,.98)//configuration_black
 .Button
   clear               both
 .Button--VARIANT\\=Buy
   display             block
-  background-color    _background
+  background-color    configuration_green
   padding             4em
   padding-left        31em
-  margin-top          5em
-  margin-bottom       5em
+  margin-top          0em
+  margin-bottom       4em
   img
     width             20em
 

@@ -229,7 +229,7 @@ table {
 }
 .Pitchbox {
   position: relative;
-  height: 90em;
+  height: 190em;
   vertical-align: bottom;
 }
 .Pitchbox .Pitchbox__poster {
@@ -272,24 +272,31 @@ table {
   color: #f8f3ee;
   line-height: 1.2em;
   font-weight: 900;
+  margin-bottom: 30em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story1,
 .Pitchbox .Pitchbox__description .Pitchbox__story2,
 .Pitchbox .Pitchbox__description .Pitchbox__story3 {
   padding: 4em;
-  padding-left: 19em;
-  padding-right: 19em;
+  padding-left: 9em;
+  padding-right: 9em;
+  text-align: center;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story1 {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story2 {
   background-color: #9eb277;
   opacity: 0.85;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story3 {
   background-color: #4b0b6c;
   opacity: 0.85;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 .Componentgrid {
   position: relative;
@@ -352,11 +359,11 @@ table {
 }
 .Button--VARIANT\=Buy {
   display: block;
-  background-color: rgba(0,0,0,0.85);
+  background-color: #9eb277;
   padding: 4em;
   padding-left: 31em;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 0em;
+  margin-bottom: 4em;
 }
 .Button--VARIANT\=Buy img {
   width: 20em;
