@@ -229,7 +229,7 @@ table {
 }
 .Pitchbox {
   position: relative;
-  height: 100em;
+  height: 102em;
   vertical-align: bottom;
 }
 .Pitchbox .Pitchbox__poster {
@@ -239,37 +239,40 @@ table {
   top: 0;
 }
 .Pitchbox .Pitchbox__title1,
-.Pitchbox .Pitchbox__title2,
 .Pitchbox .Pitchbox__title3,
-.Pitchbox .Pitchbox__moment,
 .Pitchbox .Pitchbox__location {
   position: absolute;
   background-color: rgba(0,0,0,0.85);
   color: #f8f3ee;
   font-weight: 900;
-  padding: 0.5em;
+  padding: 1.5em;
 }
 .Pitchbox .Pitchbox__title1 {
+  top: 1.6em;
+  left: 17.6em;
+}
+.Pitchbox .Pitchbox__title1a {
   font-size: 3.155em;
-  top: 0.8em;
-  left: 7.6em;
 }
 .Pitchbox .Pitchbox__title2 {
-  font-size: 3.155em;
-  top: 0.8em;
-  left: 7.6em;
+  padding-top: 0.2em;
+  font-size: 2.155em;
+  text-align: center;
 }
 .Pitchbox .Pitchbox__title3 {
-  font-size: 3.155em;
-  top: 0.8em;
-  left: 7.6em;
+  font-size: 1.1em;
+  padding: 0.2em;
+  text-transform: uppercase;
+  color: #010d0b;
+  background-color: rgba(255,255,255,0);
+  top: 15em;
+  left: 56.2em;
 }
 .Pitchbox .Pitchbox__moment {
   text-transform: uppercase;
+  padding-top: 1em;
   font-size: 1.5em;
   letter-spacing: 0.33em;
-  top: 6.5em;
-  left: 16em;
 }
 .Pitchbox .Pitchbox__location {
   font-size: 1.5em;
@@ -305,6 +308,7 @@ table {
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story2 {
   display: inline-block;
+  text-align: left;
   vertical-align: top;
   width: 49%;
   font-size: 1.17em;
@@ -315,6 +319,7 @@ table {
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story3 {
   display: inline-block;
+  text-align: left;
   vertical-align: top;
   color: #f8f3ee;
   text-align: top;
