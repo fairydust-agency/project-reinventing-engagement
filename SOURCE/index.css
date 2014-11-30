@@ -316,6 +316,7 @@ table {
   text-align: top;
   line-height: 1.5em;
   margin-bottom: 5em;
+  text-align: left;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story3 {
   display: inline-block;
@@ -327,6 +328,7 @@ table {
   font-size: 1.17em;
   line-height: 1.5em;
   margin-bottom: 5em;
+  text-align: left;
 }
 .Componentgrid {
   position: relative;
