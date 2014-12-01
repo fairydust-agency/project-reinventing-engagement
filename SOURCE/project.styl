@@ -16,6 +16,15 @@ project(
     /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
     box-sizing inherit   /* Everything else */
 
+  #hideAll
+    position            fixed
+    left                0px
+    right               0px
+    top                 0px
+    bottom              0px
+    background-color    configuration_white
+    z-index             9999 /* Higher than anything else in the document */
+
   body
     z-index           0           // layer 0
     background-color  #FFEED6

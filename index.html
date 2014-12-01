@@ -24,6 +24,9 @@
   </head>
   <body>
     <script>
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  RESPONSIVENESS
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
       // bundle.js
       var addEvent = function(elem, type, eventHandle) {
           if (elem == null || typeof(elem) == 'undefined') return;
@@ -43,12 +46,18 @@
       addEvent(window, "resize", function() { GO(); });
       window.onload = GO;
     </script>
+    <div style="display: none" id="hideAll">&nbsp;</div>
+    <script type="text/javascript">
+      document.getElementById("hideAll").style.display = "block";
+      window.onload = function()
+       { document.getElementById("hideAll").style.display = "none"; }
+    </script>
     <div id="CONTAINER" class="ReinventingEngagement">
       <div id="TOP_MENU"class="Navigation">
         <a href="#TOP_MENU">Event</a>
         <a href="#SPEAKERS">Speakers</a>
         <a href="#JOIN">Join</a>
-        <a href="#SCHEDULE">Schedule</a>
+        <!-- <a href="#SCHEDULE">Schedule</a> -->
         <a href="#VENUE">Venue</a>
         <a href="#SUBSCRIBE">Subscribe</a>
         <a href="#CONTACT">Contact</a>
@@ -283,7 +292,7 @@
         <div class="About__links">
           <a class="About__facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
           <a class="About__twitter" href="https://twitter.com/Re__Engagement" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a class="About__email" href="mailto:pegiblin@yahoo.com" target="_blank"><i class="fa fa-at"></i></a>
+          <a class="About__email" href="mailto:reinventingengagement@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
         </div>
         <div class="About__description">
           <div class="About__description__name">Reinventing Engagement</div>
@@ -297,7 +306,7 @@
             Reinventing Engagement - <i class="fa fa-copyright"></i> All rights reserved 2014
           </div>
           <div class="About__description__websiteDesign">
-            Website design by <a id="author" href="http://fairydust.agency">fairydust.agency</a>
+            Website design by <a id="author" href="mailto:fairydust@serapath.de" target="_blank">fairydust.agency</a>
           </div>
         </div>
       </div>

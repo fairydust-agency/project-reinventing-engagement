@@ -222,8 +222,8 @@ table {
   color: #f8f3ee;
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-top: 0.2em;
   padding-bottom: 0.25em;
 }
@@ -871,6 +871,15 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+}
+#hideAll {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #f8f3ee;
+  z-index: 9999;
 }
 body {
   z-index: 0;
