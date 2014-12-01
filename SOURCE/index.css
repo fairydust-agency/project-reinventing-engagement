@@ -497,8 +497,45 @@ table {
   margin-top: 0em;
   margin-bottom: 4em;
 }
+.Button--VARIANT\=Buy a {
+  display: inline-block;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 900;
+  text-decoration: none;
+  color: #f8f3ee;
+  font-size: 2em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  width: 10em;
+  height: 2em;
+  background-color: #fea304;
+}
+.Button--VARIANT\=Buy a:hover {
+  color: #fea304;
+  background-color: #f8f3ee;
+}
 .Button--VARIANT\=Buy img {
   width: 20em;
+}
+.Pitchbox__action a {
+  display: inline-block;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 900;
+  text-decoration: none;
+  color: #f8f3ee;
+  font-size: 1em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  width: 9em;
+  height: 2em;
+  background-color: #fea304;
+  margin: 0 auto;
+}
+.Pitchbox__action a:hover {
+  color: #fea304;
+  background-color: #f8f3ee;
 }
 .Venue {
   z-index: 100;

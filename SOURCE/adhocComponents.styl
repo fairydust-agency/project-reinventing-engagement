@@ -263,6 +263,22 @@ _font_green            = configuration_green
 /*-----------------------------------------------------------------------------
   BUTTON
 -----------------------------------------------------------------------------*/
+eventbriteButton(x = 4em, y = 1em)
+  display           inline-block
+  text-align        center
+  line-height       2em
+  font-weight       900
+  text-decoration   none
+  color             configuration_white
+  font-size         y
+  border-radius     0.3em
+  width             x
+  height            2em
+  background-color  configuration_orange
+  &:hover
+    color             configuration_orange
+    background-color  configuration_white
+
 _background           = rgba(0,0,0,.98)//configuration_black
 .Button
   clear               both
@@ -273,9 +289,14 @@ _background           = rgba(0,0,0,.98)//configuration_black
   padding-left        31em
   margin-top          0em
   margin-bottom       4em
+  a
+    eventbriteButton(x:10em, y:2em)
   img
     width             20em
 
+.Pitchbox__action a
+  eventbriteButton(x:9em, y:1em)
+  margin 0 auto
 
 /*-----------------------------------------------------------------------------
   VENUE
