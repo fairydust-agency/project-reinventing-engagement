@@ -211,21 +211,23 @@ table {
 .Navigation {
   z-index: 100;
   background-color: #4b0b6c;
-  font-size: 1.2em;
+  font-size: 1.8em;
   font-weight: 900;
   letter-spacing: 0.2em;
   text-align: center;
-  padding-top: 0.9em;
-  padding-bottom: 0.95em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 .Navigation a {
   color: #f8f3ee;
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.2em;
-  padding-bottom: 0.25em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+.Navigation a:hover {
+  color: #4b0b6c;
+  background-color: #f8f3ee;
 }
 .Pitchbox {
   position: relative;
@@ -237,6 +239,9 @@ table {
   width: 100%;
   position: fixed;
   top: 0;
+}
+.Pitchbox .Pitchbox__adress {
+  margin-left: 0;
 }
 .Pitchbox .Pitchbox__title1,
 .Pitchbox .Pitchbox__title3,
@@ -250,6 +255,8 @@ table {
 .Pitchbox .Pitchbox__title1 {
   top: 1.6em;
   left: 17.6em;
+  width: inherit;
+  text-align: center;
 }
 .Pitchbox .Pitchbox__title1a {
   font-size: 3.155em;
@@ -276,12 +283,16 @@ table {
 }
 .Pitchbox .Pitchbox__location {
   font-size: 1.5em;
+  width: auto;
   top: 12em;
   left: 40em;
   padding: 1em;
 }
+.Pitchbox .Pitchbox__location .Pitchbox__logo {
+  text-align: left;
+}
 .Pitchbox .Pitchbox__location img {
-  width: 100%;
+  width: 9.6em;
 }
 .Pitchbox .Pitchbox__description {
   position: absolute;
@@ -297,10 +308,11 @@ table {
 .Pitchbox .Pitchbox__description .Pitchbox__story3 {
   padding: 2em;
   padding-left: 4em;
-  padding-right: 4em;
-  text-align: center;
+  font-size: 1.17em;
+  text-align: left;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story1 {
+  text-align: center;
   text-transform: uppercase;
   line-height: 2em;
   font-size: 1.5em;
@@ -309,10 +321,12 @@ table {
 .Pitchbox .Pitchbox__description .Pitchbox__story2 {
   display: inline-block;
   text-align: left;
+  font-size: 1.17em;
   vertical-align: top;
   width: 49%;
   font-size: 1.17em;
   color: #f8f3ee;
+  background-color: rgba(0,0,0,0);
   text-align: top;
   line-height: 1.5em;
   margin-bottom: 5em;
@@ -330,6 +344,123 @@ table {
   margin-bottom: 5em;
   text-align: left;
 }
+@media only screen and (max-width: 1000px) {
+  .Pitchbox {
+    position: relative;
+    height: 292em;
+    vertical-align: bottom;
+  }
+  .Pitchbox .Pitchbox__poster {
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .Pitchbox .Pitchbox__adress {
+    margin-left: 25%;
+  }
+  .Pitchbox .Pitchbox__title1,
+  .Pitchbox .Pitchbox__title3,
+  .Pitchbox .Pitchbox__location {
+    position: absolute;
+    background-color: rgba(0,0,0,0.85);
+    color: #f8f3ee;
+    font-weight: 900;
+    padding: 1.5em;
+  }
+  .Pitchbox .Pitchbox__title1 {
+    top: 1.6em;
+    left: 2.5%;
+    width: 95%;
+    text-align: center;
+  }
+  .Pitchbox .Pitchbox__title1a {
+    font-size: 3.155em;
+  }
+  .Pitchbox .Pitchbox__title2 {
+    padding-top: 0.2em;
+    font-size: 2.155em;
+    text-align: center;
+  }
+  .Pitchbox .Pitchbox__title3 {
+    font-size: 3.1em;
+    padding: 0.2em;
+    text-transform: uppercase;
+    color: #010d0b;
+    background-color: rgba(255,255,255,0);
+    top: 4.5em;
+    left: 3em;
+  }
+  .Pitchbox .Pitchbox__moment {
+    text-transform: uppercase;
+    padding-top: 1em;
+    font-size: 1.5em;
+    letter-spacing: 0.33em;
+  }
+  .Pitchbox .Pitchbox__location {
+    font-size: 3em;
+    width: 22.6em;
+    top: 6em;
+    left: 2.3em;
+    padding: 1em;
+  }
+  .Pitchbox .Pitchbox__location .Pitchbox__logo {
+    text-align: center;
+  }
+  .Pitchbox .Pitchbox__location img {
+    width: 9.6em;
+  }
+  .Pitchbox .Pitchbox__description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.85);
+    color: #f8f3ee;
+    line-height: 1.2em;
+    font-weight: 900;
+  }
+  .Pitchbox .Pitchbox__description .Pitchbox__story1,
+  .Pitchbox .Pitchbox__description .Pitchbox__story2,
+  .Pitchbox .Pitchbox__description .Pitchbox__story3 {
+    padding: 2em;
+    padding-left: 4em;
+    font-size: 3em;
+    text-align: center;
+  }
+  .Pitchbox .Pitchbox__description .Pitchbox__story1 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2em;
+    font-size: 2.6em;
+    color: #f8f3ee;
+  }
+  .Pitchbox .Pitchbox__description .Pitchbox__story2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 3em;
+    vertical-align: top;
+    width: auto;
+    font-size: 3em;
+    color: #f8f3ee;
+    background-color: #4b0b6c;
+    text-align: top;
+    line-height: 1.5em;
+    margin-bottom: 5em;
+    text-align: left;
+  }
+  .Pitchbox .Pitchbox__description .Pitchbox__story3 {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    color: #f8f3ee;
+    text-align: top;
+    width: auto;
+    font-size: 3em;
+    line-height: 1.5em;
+    margin-bottom: 5em;
+    text-align: left;
+  }
+}
 .Componentgrid {
   position: relative;
   display: block;
@@ -343,13 +474,42 @@ table {
   margin-left: -0.14em;
   margin-right: -0.14em;
   padding-bottom: 29%;
+  font-size: 1em;
   display: inline-block;
 }
-.Componentgrid--VARIANT\=Grid .Card:nth-child(even) {
+.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+2) {
   background-color: rgba(0,0,0,0.75);
 }
-.Componentgrid--VARIANT\=Grid .Card:nth-child(odd) {
+.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+3) {
   background-color: #4b0b6c;
+}
+.Componentgrid--VARIANT\=Grid .Card:nth-child(4n) {
+  background-color: rgba(0,0,0,0.75);
+}
+.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+1) {
+  background-color: #4b0b6c;
+}
+@media only screen and (max-width: 1000px) {
+  .Componentgrid--VARIANT\=Grid .Card {
+    width: 50.6%;
+    margin-left: -0.14em;
+    margin-right: -0.14em;
+    padding-bottom: 42%;
+    font-size: 1.5em;
+    display: inline-block;
+  }
+  .Componentgrid--VARIANT\=Grid .Card:nth-child(4n+2) {
+    background-color: #4b0b6c;
+  }
+  .Componentgrid--VARIANT\=Grid .Card:nth-child(4n+3) {
+    background-color: #4b0b6c;
+  }
+  .Componentgrid--VARIANT\=Grid .Card:nth-child(4n) {
+    background-color: rgba(0,0,0,0.75);
+  }
+  .Componentgrid--VARIANT\=Grid .Card:nth-child(4n+1) {
+    background-color: rgba(0,0,0,0.75);
+  }
 }
 .Title {
   font-size: 2em;
@@ -518,6 +678,20 @@ table {
 .Button--VARIANT\=Buy img {
   width: 20em;
 }
+@media only screen and (max-width: 1000px) {
+  .Button {
+    padding: 10em;
+    padding-left: 17em;
+  }
+  .Button a {
+    font-size: 5em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .Pitchbox__action {
+    text-align: center;
+  }
+}
 .Pitchbox__action a {
   display: inline-block;
   text-align: center;
@@ -543,7 +717,7 @@ table {
   background-color: none;
   width: 100%;
   overflow: hidden;
-  font-size: 20px;
+  font-size: inherit;
   vertical-align: top;
 }
 .Venue .Venue__map {
@@ -567,7 +741,7 @@ table {
   z-index: 400;
   position: absolute;
   top: 3em;
-  left: 3em;
+  right: 3em;
   display: block;
   font-size: 2em;
   font-weight: 900;
@@ -590,7 +764,7 @@ table {
   width: 100%;
   padding: 3em;
   overflow: hidden;
-  font-size: 1.5em;
+  font-size: 2em;
   vertical-align: top;
   background-color: #9eb277;
 }

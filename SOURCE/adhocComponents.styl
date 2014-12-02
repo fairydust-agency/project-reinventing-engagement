@@ -6,20 +6,21 @@ _background = configuration_purple
 .Navigation
   z-index             100 // layer 1
   background-color    _background
-  font-size           1.2em
+  font-size           1.8em
   font-weight         900
   letter-spacing      0.2em
   text-align          center
-  padding-top         0.9em
-  padding-bottom      0.95em
+  padding-top         0.5em
+  padding-bottom      0.5em
   a
     color             _text
     text-transform    uppercase
     text-decoration   none
-    padding-left      1em
-    padding-right     1em
-    padding-top       0.2em
-    padding-bottom    0.25em
+    padding-left      0.6em
+    padding-right     0.6em
+    &:hover
+      color           _background
+      background-color _text
 
 
 /*-----------------------------------------------------------------------------
@@ -27,19 +28,40 @@ _background = configuration_purple
 -----------------------------------------------------------------------------*/
 _background = rgba(0,0,0,.85)//configuration_black
 _text       = configuration_white
-.Pitchbox
+Pitchbox(
+  pitchbox_height   = 102em,
+  position_title3   = 56.2em,
+  position_location = 40em,
+  top_location      = 12em,
+  margin_location   = 0,
+  position_title1   = 17.6em,
+  width_title1      = inherit,
+  size_title3       = 1.1em,
+  top_title3        = 15em,
+  width_location    = auto,
+  size_location     = 1.5em,
+  logo_position     = left,
+  align_story2      = left,
+  align_story3      = left,
+  size_story1       = 1.5em,
+  size_story2       = 1.17em,
+  size_story3       = 1.17em,
+  width_story3      = 49%,
+  width_story2      = 49%,
+  background_story2 = rgba(0,0,0,0),
+)
   position            relative
-  height              102em
+  height              pitchbox_height
   vertical-align      bottom
   .Pitchbox__poster
     z-index           -1 // layer 0
     width             100%
     position          fixed
     top               0
+  .Pitchbox__adress
+    margin-left       margin_location
   .Pitchbox__title1,
-  // .Pitchbox__title2,
   .Pitchbox__title3,
-  // .Pitchbox__moment,
   .Pitchbox__location
     position          absolute
     background-color  _background
@@ -48,7 +70,9 @@ _text       = configuration_white
     padding           1.5em
   .Pitchbox__title1
     top               1.6em
-    left              17.6em
+    left              position_title1
+    width             width_title1
+    text-align        center
   .Pitchbox__title1a
     font-size         3.155em
   .Pitchbox__title2
@@ -56,25 +80,28 @@ _text       = configuration_white
     font-size         2.155em
     text-align        center
   .Pitchbox__title3
-    font-size         1.1em
+    font-size         size_title3
     padding           0.2em
     text-transform    uppercase
     color             configuration_black
     background-color  rgba(255,255,255,0)
-    top               15em
-    left              56.2em
+    top               top_title3
+    left              position_title3
   .Pitchbox__moment
     text-transform    uppercase
     padding-top       1em
     font-size         1.5em
     letter-spacing    0.33em
   .Pitchbox__location
-    font-size         1.5em
-    top               12em
-    left              40em
-    padding            1em
+    font-size         size_location
+    width             width_location
+    top               top_location
+    left              position_location
+    padding           1em
+    .Pitchbox__logo
+      text-align      logo_position
     img
-      width           100%
+      width           9.6em
   .Pitchbox__description
     position          absolute
     bottom            0
@@ -88,20 +115,23 @@ _text       = configuration_white
     .Pitchbox__story3
       padding           2em
       padding-left      4em
-      padding-right     4em
-      text-align        center
+      font-size         size_story3
+      text-align        align_story3
     .Pitchbox__story1
+      text-align        center
       text-transform    uppercase
       line-height       2em
-      font-size         1.5em
+      font-size         size_story1
       color             configuration_white
     .Pitchbox__story2
       display           inline-block
-      text-align        left
+      text-align        align_story2
+      font-size         size_story2
       vertical-align    top
-      width             49%
-      font-size         1.17em
+      width             width_story2
+      font-size         size_story2
       color             configuration_white
+      background-color  background_story2
       text-align        top
       line-height       1.5em
       margin-bottom     5em
@@ -112,11 +142,40 @@ _text       = configuration_white
       vertical-align    top
       color             configuration_white
       text-align        top
-      width             49%
-      font-size         1.17em
+      width             width_story3
+      font-size         size_story3
       line-height       1.5em
       margin-bottom     5em
       text-align        left
+
+.Pitchbox
+  Pitchbox()
+
++below(configuration_breakpoint_tablet)
+  .Pitchbox
+    Pitchbox(
+      pitchbox_height:    292em,
+      position_title3:    3em,
+      position_location:  2.3em,
+      margin_location:    25%,
+      top_location:       6em,
+      width_location:     22.6em,
+      position_title1:    2.5%,
+      width_title1:       95%,
+      size_title3:        3.1em,
+      top_title3:         4.5em,
+      size_location:      3em,
+      logo_position:      center,
+      align_story2:       center,
+      align_story3:       center,
+      size_story1:        2.6em,
+      size_story2:        3em,
+      size_story3:        3em,
+      width_story3:       auto,
+      width_story2:       auto,
+      background_story2:  configuration_purple
+    )
+
 
 
 /*-----------------------------------------------------------------------------
@@ -136,16 +195,47 @@ _text       = configuration_white
 
 _background1           = rgba(0,0,0,0.75)//configuration_black
 _background2           = configuration_purple
-.Componentgrid--VARIANT\\=Grid .Card
-  width                 33.56%
-  margin-left           -0.14em
-  margin-right          -0.14em
-  padding-bottom        29%
-  display               inline-block
-.Componentgrid--VARIANT\\=Grid .Card:nth-child(even)
-  background-color      _background1
-.Componentgrid--VARIANT\\=Grid .Card:nth-child(odd)
-  background-color      _background2
+Componentgrid(
+  component_width   = 33.56%,
+  component_bottom  = 29%,
+  component_size    = 1em,
+  bgcolorA1         = _background1,
+  bgcolorA2         = _background2,
+  bgcolorB1         = _background1,
+  bgcolorB2         = _background2
+)
+  .Card
+    width                 component_width
+    margin-left           -0.14em
+    margin-right          -0.14em
+    padding-bottom        component_bottom
+    font-size             component_size
+    display               inline-block
+  .Card:nth-child(4n+2)
+    background-color      bgcolorA1
+  .Card:nth-child(4n+3)
+    background-color      bgcolorA2
+  .Card:nth-child(4n)
+    background-color      bgcolorB1
+  .Card:nth-child(4n+1)
+    background-color      bgcolorB2
+
+.Componentgrid--VARIANT\\=Grid
+  Componentgrid()
+
++below(configuration_breakpoint_tablet)
+  .Componentgrid--VARIANT\\=Grid
+    Componentgrid(
+      component_width:  50.6%,
+      component_bottom: 42%,
+      component_size:   1.5em,
+      bgcolorA1:        _background2,
+      bgcolorA2:        _background2,
+      bgcolorB1:        _background1,
+      bgcolorB2:        _background1
+    )
+
+
 
 _background1           = configuration_green
 _background2           = configuration_black
@@ -293,9 +383,22 @@ _background           = rgba(0,0,0,.98)//configuration_black
   img
     width             20em
 
+
++below(configuration_breakpoint_tablet)
+  .Button
+    padding 10em
+    padding-left 17em
+    a
+      font-size 5em
+
++below(configuration_breakpoint_tablet)
+  .Pitchbox__action
+    text-align center
+
 .Pitchbox__action a
   eventbriteButton(x:9em, y:1em)
   margin 0 auto
+
 
 /*-----------------------------------------------------------------------------
   VENUE
@@ -306,7 +409,7 @@ _background           = rgba(0,0,0,.98)//configuration_black
   background-color    none
   width               100%
   overflow            hidden
-  font-size           20px      // ANCHOR SIZE
+  font-size           inherit   // ANCHOR SIZE
   vertical-align      top
   .Venue__map
     z-index           200     // layer 2
@@ -327,7 +430,7 @@ _background           = rgba(0,0,0,.98)//configuration_black
     z-index           400     // layer 4
     position          absolute
     top               3em
-    left              3em
+    right             3em
     display           block
     font-size         2em
     font-weight       900
@@ -355,7 +458,7 @@ _text = configuration_purple
   width               100%
   padding             3em
   overflow            hidden
-  font-size           1.5em     // ANCHOR SIZE
+  font-size           2em     // ANCHOR SIZE
   vertical-align      top
   background-color    _background   // @TODO: use variable
 .Subscribe__box
