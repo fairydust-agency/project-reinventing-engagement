@@ -211,13 +211,13 @@ Componentgrid(
     padding-bottom        component_bottom
     font-size             component_size
     display               inline-block
-  .Card:nth-child(4n+2)
-    background-color      bgcolorA1
   .Card:nth-child(4n+3)
+    background-color      bgcolorA1
+  .Card:nth-child(4n+4)
     background-color      bgcolorA2
-  .Card:nth-child(4n)
-    background-color      bgcolorB1
   .Card:nth-child(4n+1)
+    background-color      bgcolorB1
+  .Card:nth-child(4n+2)
     background-color      bgcolorB2
 
 .Componentgrid--VARIANT\\=Grid
@@ -293,6 +293,14 @@ _font_green            = configuration_green
     color _font_green
     text-decoration none
 
+
+#SPEAKERS .Componentgrid__title
+  color             configuration_white
+  padding           1em
+  text-align        center
+  font-size         1.8em
+  font-weight       900
+  background-color  rgba(0,0,0,0.75)
 /*-----------------------------------------------------------------------------
   PROFILE
 -----------------------------------------------------------------------------*/
@@ -554,25 +562,57 @@ _font_purple = configuration_purple
     .About__description__websiteDesign
       font-size 0.4em
       text-align center
-  .About__links {
-    width: 100%;
-    height: 3em
-    display: table;
-    margin: 0;
-  }
-  .About__links a {
-    display: table-cell;
-    color: white;
-    width: 14.2%;
-    text-align: center;
-    font-size: 2em;
-    padding: .5em;
-  }
-  @media (max-width: 768px) {
-    .About__links a {
-      font-size: 1.5em;
-    }
-  }
+  .About__links
+    width 100%
+    height 3em
+    display table
+    margin 0
+  .About__links a
+    display table-cell
+    color white
+    width 14.2%
+    text-align center
+    font-size 2em
+    padding .5em
+  @media (max-width: 768px)
+    .About__links a
+      font-size 1.5em
+
+  .About__crew
+    font-size 0.68em
+
+    .Componentgrid__title
+      color             configuration_white
+      padding           1em
+      text-align        center
+      font-size         1.8em
+      font-weight       900
+      background-color  rgba(0,0,0,0.85)
+
+
+    _background1           = configuration_orange
+    _background2           = rgba(0,0,0,0.75)
+
+    &.Componentgrid--VARIANT\\=Grid
+      Componentgrid(
+        bgcolorA1:          _background1,
+        bgcolorA2:          _background2,
+        bgcolorB1:          _background1,
+        bgcolorB2:          _background2
+      )
+
+    +below(configuration_breakpoint_tablet)
+      &.Componentgrid--VARIANT\\=Grid
+        Componentgrid(
+          component_width:  50.6%,
+          component_bottom: 42%,
+          component_size:   1.5em,
+          bgcolorA1:        _background2,
+          bgcolorA2:        _background2,
+          bgcolorB1:        _background1,
+          bgcolorB2:        _background1
+        )
+
 
 
   /*

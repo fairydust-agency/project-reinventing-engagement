@@ -477,16 +477,16 @@ table {
   font-size: 1em;
   display: inline-block;
 }
-.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+2) {
+.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+3) {
   background-color: rgba(0,0,0,0.75);
 }
-.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+3) {
+.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+4) {
   background-color: #4b0b6c;
 }
-.Componentgrid--VARIANT\=Grid .Card:nth-child(4n) {
+.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+1) {
   background-color: rgba(0,0,0,0.75);
 }
-.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+1) {
+.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+2) {
   background-color: #4b0b6c;
 }
 @media only screen and (max-width: 1000px) {
@@ -498,16 +498,16 @@ table {
     font-size: 1.5em;
     display: inline-block;
   }
-  .Componentgrid--VARIANT\=Grid .Card:nth-child(4n+2) {
-    background-color: #4b0b6c;
-  }
   .Componentgrid--VARIANT\=Grid .Card:nth-child(4n+3) {
     background-color: #4b0b6c;
   }
-  .Componentgrid--VARIANT\=Grid .Card:nth-child(4n) {
-    background-color: rgba(0,0,0,0.75);
+  .Componentgrid--VARIANT\=Grid .Card:nth-child(4n+4) {
+    background-color: #4b0b6c;
   }
   .Componentgrid--VARIANT\=Grid .Card:nth-child(4n+1) {
+    background-color: rgba(0,0,0,0.75);
+  }
+  .Componentgrid--VARIANT\=Grid .Card:nth-child(4n+2) {
     background-color: rgba(0,0,0,0.75);
   }
 }
@@ -567,6 +567,14 @@ table {
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) a {
   color: #9eb277;
   text-decoration: none;
+}
+#SPEAKERS .Componentgrid__title {
+  color: #f8f3ee;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 900;
+  background-color: rgba(0,0,0,0.75);
 }
 .avatar {
   width: 9em;
@@ -915,6 +923,59 @@ table {
 @media (max-width: 768px) {
   .About .About__links a {
     font-size: 1.5em;
+  }
+}
+.About .About__crew {
+  font-size: 0.68em;
+}
+.About .About__crew .Componentgrid__title {
+  color: #f8f3ee;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 900;
+  background-color: rgba(0,0,0,0.85);
+}
+.About .About__crew.Componentgrid--VARIANT\=Grid .Card {
+  width: 33.56%;
+  margin-left: -0.14em;
+  margin-right: -0.14em;
+  padding-bottom: 29%;
+  font-size: 1em;
+  display: inline-block;
+}
+.About .About__crew.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+3) {
+  background-color: #fea304;
+}
+.About .About__crew.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+4) {
+  background-color: rgba(0,0,0,0.75);
+}
+.About .About__crew.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+1) {
+  background-color: #fea304;
+}
+.About .About__crew.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+2) {
+  background-color: rgba(0,0,0,0.75);
+}
+@media only screen and (max-width: 1000px) {
+  .About .About__crew.Componentgrid--VARIANT\=Grid .Card {
+    width: 50.6%;
+    margin-left: -0.14em;
+    margin-right: -0.14em;
+    padding-bottom: 42%;
+    font-size: 1.5em;
+    display: inline-block;
+  }
+  .About .About__crew.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+3) {
+    background-color: rgba(0,0,0,0.75);
+  }
+  .About .About__crew.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+4) {
+    background-color: rgba(0,0,0,0.75);
+  }
+  .About .About__crew.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+1) {
+    background-color: #fea304;
+  }
+  .About .About__crew.Componentgrid--VARIANT\=Grid .Card:nth-child(4n+2) {
+    background-color: #fea304;
   }
 }
 .About .About__links a:first-child:nth-last-child(1) {
