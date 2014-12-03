@@ -196,6 +196,10 @@ Pitchbox(
 _background1           = rgba(0,0,0,0.75)//configuration_black
 _background2           = configuration_purple
 Componentgrid(
+  fontcolorA1        = configuration_orange,
+  fontcolorA2        = configuration_orange,
+  fontcolorB1        = configuration_orange,
+  fontcolorB2        = configuration_orange,
   component_width   = 33.56%,
   component_bottom  = 29%,
   component_size    = 1em,
@@ -213,12 +217,20 @@ Componentgrid(
     display               inline-block
   .Card:nth-child(4n+3)
     background-color      bgcolorA1
+    .name
+      color               fontcolorA1
   .Card:nth-child(4n+4)
     background-color      bgcolorA2
+    .name
+      color               fontcolorA2
   .Card:nth-child(4n+1)
     background-color      bgcolorB1
+    .name
+      color               fontcolorB1
   .Card:nth-child(4n+2)
     background-color      bgcolorB2
+    .name
+      color               fontcolorB2
 
 .Componentgrid--VARIANT\\=Grid
   Componentgrid()
@@ -595,6 +607,10 @@ _font_purple = configuration_purple
 
     &.Componentgrid--VARIANT\\=Grid
       Componentgrid(
+        fontcolorA1:        configuration_black,
+        fontcolorA2:        configuration_orange,
+        fontcolorB1:        configuration_black,
+        fontcolorB2:        configuration_orange,
         bgcolorA1:          _background1,
         bgcolorA2:          _background2,
         bgcolorB1:          _background1,
@@ -604,6 +620,10 @@ _font_purple = configuration_purple
     +below(configuration_breakpoint_tablet)
       &.Componentgrid--VARIANT\\=Grid
         Componentgrid(
+          fontcolorA1:        configuration_orange,
+          fontcolorA2:        configuration_orange,
+          fontcolorB1:        configuration_black,
+          fontcolorB2:        configuration_black,
           component_width:  50.6%,
           component_bottom: 42%,
           component_size:   1.5em,
