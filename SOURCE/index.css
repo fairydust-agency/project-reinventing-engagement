@@ -231,7 +231,7 @@ table {
 }
 .Pitchbox {
   position: relative;
-  height: 102em;
+  height: 94em;
   vertical-align: bottom;
 }
 .Pitchbox .Pitchbox__poster {
@@ -253,8 +253,8 @@ table {
   padding: 1.5em;
 }
 .Pitchbox .Pitchbox__title1 {
-  top: 1.6em;
-  left: 17.6em;
+  top: 0.6em;
+  left: 7.6em;
   width: inherit;
   text-align: center;
 }
@@ -272,8 +272,8 @@ table {
   text-transform: uppercase;
   color: #010d0b;
   background-color: rgba(255,255,255,0);
-  top: 15em;
-  left: 56.2em;
+  top: 3em;
+  left: 60.2em;
 }
 .Pitchbox .Pitchbox__moment {
   text-transform: uppercase;
@@ -284,8 +284,8 @@ table {
 .Pitchbox .Pitchbox__location {
   font-size: 1.5em;
   width: auto;
-  top: 12em;
-  left: 40em;
+  top: 3em;
+  left: 43em;
   padding: 1em;
 }
 .Pitchbox .Pitchbox__location .Pitchbox__logo {
@@ -369,7 +369,7 @@ table {
     padding: 1.5em;
   }
   .Pitchbox .Pitchbox__title1 {
-    top: 1.6em;
+    top: 0.6em;
     left: 2.5%;
     width: 95%;
     text-align: center;
