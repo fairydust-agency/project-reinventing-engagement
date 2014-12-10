@@ -331,6 +331,10 @@ table {
   background-color: rgba(0,0,0,0);
   text-align: top;
   line-height: 1.5em;
+<<<<<<< Updated upstream
+=======
+  margin-bottom: 5em;
+>>>>>>> Stashed changes
   text-align: left;
 }
 .Pitchbox .Pitchbox__description .Pitchbox__story3 {
@@ -342,6 +346,7 @@ table {
   width: 49%;
   font-size: 1.17em;
   line-height: 1.5em;
+<<<<<<< Updated upstream
   text-align: left;
 }
 @media only screen and (max-width: 1000px) {
@@ -464,6 +469,10 @@ table {
   .Pitchbox .Pitchbox__description {
     top: 71em;
   }
+=======
+  margin-bottom: 5em;
+  text-align: left;
+>>>>>>> Stashed changes
 }
 .Componentgrid {
   position: relative;
