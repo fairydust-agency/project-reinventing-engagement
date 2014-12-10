@@ -184,14 +184,12 @@ Pitchbox(
 -----------------------------------------------------------------------------*/
 .Componentgrid
   position            relative
-  margin-top          52em
   display             block
   font-size           2em
 
 +below(configuration_breakpoint_tablet)
   .Componentgrid
     position            relative
-    margin-top          154em
 
 /*-----------------------------------------------------------------------------
   CARD
@@ -240,6 +238,7 @@ Componentgrid(
 
 .Componentgrid--VARIANT\\=Grid
   Componentgrid()
+  margin-top          52em
 
 +below(configuration_breakpoint_tablet)
   .Componentgrid--VARIANT\\=Grid
@@ -252,6 +251,7 @@ Componentgrid(
       bgcolorB1:        _background1,
       bgcolorB2:        _background1
     )
+    margin-top          154em
 
 
 
@@ -272,9 +272,7 @@ _font_green            = configuration_green
   text-align          center
   padding             1em
 .Componentgrid--VARIANT\\=List
-  display             none
   padding-bottom      2em
-  font-size           1em
 .Componentgrid--VARIANT\\=List .Card
   display             block
   margin-left         auto
