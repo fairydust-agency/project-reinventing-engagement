@@ -555,7 +555,7 @@ table {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  color: #9eb277;
+  color: #f8f3ee;
   font-weight: bold;
   background-color: #010d0b;
   text-align: center;
@@ -573,7 +573,7 @@ table {
   text-align: center;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(even) {
-  background-color: #010d0b;
+  background-color: #4b0b6c;
   opacity: 0.9;
   width: 80%;
   text-align: center;
@@ -591,18 +591,18 @@ table {
   text-decoration: none;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) {
-  background-color: #010d0b;
+  background-color: #4b0b6c;
   opacity: 0.98;
   width: 80%;
   text-align: center;
   font-size: 0.8em;
   font-weight: bold;
-  color: #9eb277;
+  color: #fea304;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
 }
 .Componentgrid--VARIANT\=List .Card:nth-child(odd) a {
-  color: #9eb277;
+  color: #fea304;
   text-decoration: none;
 }
 #SPEAKERS .Componentgrid__title {
