@@ -652,6 +652,9 @@ table {
   -o-transition: all 3s ease-out;
   transition: all 3s ease-out;
 }
+.Card--VARIANT\=Userprofile {
+  padding-bottom: 11.7em !important;
+}
 .Card--VARIANT\=Userprofile a {
   text-decoration: none;
   display: block;
