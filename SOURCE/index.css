@@ -515,7 +515,7 @@ table {
 }
 @media only screen and (max-width: 1000px) {
   .Componentgrid--VARIANT\=Grid {
-    margin-top: 154em;
+    margin-top: 165em;
   }
   .Componentgrid--VARIANT\=Grid .Card {
     width: 50.6%;
@@ -660,8 +660,7 @@ table {
   display: block;
   position: absolute;
   top: 0;
-  width: 15em;
-  left: 0;
+  left: 1.5em;
 }
 .Card--VARIANT\=Userprofile a .avatar {
   position: relative;
@@ -732,7 +731,7 @@ table {
 @media only screen and (max-width: 1000px) {
   .Button {
     padding: 10em;
-    padding-left: 17em;
+    text-align: center;
   }
   .Button a {
     font-size: 5em;
